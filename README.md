@@ -2,7 +2,7 @@
 
 此目录用于本地阅读、修改、分享和 GitHub 协作。它收集已实际取得的项目成果，并保留五个云端对话的来源。
 
-当前已取得“主对话/技术”“宣传”“投资”“投资顾问”四份完整归档，以及五个对话的可读取历史文字和本机已有成果。“产品”归档正在逐文件核对补齐。历史附件是否可恢复，以 [迁移清单](MIGRATION_STATUS.md) 为准。本资料库包含项目源材料，不代表应用已完成部署。
+已收集五个云端对话当前可获取的历史文字、图片、PPT、工程上下文与源文件。“产品”归档按云端清单逐文件重建，16 个文件的大小和 SHA256 全部与原件一致；其他四份为原始 ZIP 下载并校验。历史附件是否可恢复，以 [迁移清单](MIGRATION_STATUS.md) 为准。本资料库包含项目源材料，不代表应用已完成部署。
 
 ## 从哪里开始
 
@@ -14,8 +14,9 @@
 - [技术工程接手入口](conversations/technical/cloud-archive/docs/工程上下文包/life-management/START_HERE.md)。
 - [投资成果与方法源码](conversations/investment/cloud-archive/START_HERE.md)。
 - [宣传成果](conversations/promotion/cloud-archive/)：图片、PPT、脑图及源文件。
+- [产品成果](conversations/product/cloud-archive/)：产品历史、PPT、上下文包及展开文档。
 - [投资顾问成果](conversations/investment-advisor/cloud-archive/)。
-- [原始归档 ZIP](archives/)：保留云端交付原件；文件夹内 cloud-archive 为解压后的可编辑版本。
+- [归档 ZIP](archives/)：四份云端原始包与一份逐文件验证后重打包的产品包；文件夹内 cloud-archive 为可编辑版本。
 - [远程协作说明](COLLABORATION.md)。
 
 仓库：https://github.com/xxyzyl/1

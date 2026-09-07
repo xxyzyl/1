@@ -1,0 +1,128 @@
+{
+  "verified_date": "2026-09-07",
+  "repository": "https://github.com/xxyzyl/1",
+  "archives": [
+    {
+      "title": "主对话/技术",
+      "slug": "technical",
+      "filename": "technical-archive.zip",
+      "sha256": "bd48f16f78d54bf7026f1c686d29d236077b6cb2e073f64e9c6208f1f65a3cfe",
+      "verification": "original_zip_download_sha256_verified",
+      "original_remote_archive_sha256": "bd48f16f78d54bf7026f1c686d29d236077b6cb2e073f64e9c6208f1f65a3cfe"
+    },
+    {
+      "title": "产品",
+      "slug": "product",
+      "filename": "product-archive-reconstructed.zip",
+      "sha256": "d2176f7a05959ee6d30fd729ffcb3a2dc70734ea9de55376b149f8cd4f6a2efd",
+      "verification": "reconstructed_from_16_byte_identical_files",
+      "original_remote_archive_sha256": "c725ce2d471aa9f2c14b0b619fd6cb262085bcd4680738d1c3c391110d87988f"
+    },
+    {
+      "title": "宣传",
+      "slug": "promotion",
+      "filename": "promotion-archive-final.zip",
+      "sha256": "1aac6b8404d3b2b976c58c32c87039c5344a511b0252a2eda63c941fd87d002c",
+      "verification": "original_zip_download_sha256_verified",
+      "original_remote_archive_sha256": "1aac6b8404d3b2b976c58c32c87039c5344a511b0252a2eda63c941fd87d002c"
+    },
+    {
+      "title": "投资",
+      "slug": "investment",
+      "filename": "investment-archive.zip",
+      "sha256": "d6f5417c5561577d22772215a870fad422e112cbc36678d15e995fdb54eafe3f",
+      "verification": "original_zip_download_sha256_verified",
+      "original_remote_archive_sha256": "d6f5417c5561577d22772215a870fad422e112cbc36678d15e995fdb54eafe3f"
+    },
+    {
+      "title": "投资顾问",
+      "slug": "investment-advisor",
+      "filename": "investment-advisor-archive.zip",
+      "sha256": "77a7888396a53f56c138f88d868d342f0618f66d09de7cfe7f782264af474538",
+      "verification": "original_zip_download_sha256_verified",
+      "original_remote_archive_sha256": "77a7888396a53f56c138f88d868d342f0618f66d09de7cfe7f782264af474538"
+    }
+  ],
+  "product_files": [
+    {
+      "path": "conversations/product/history.md",
+      "size": 4131,
+      "sha256": "1e7cf49029aed3038389364e8cdc51e0edca555fdf1de9747da7815057414f0c"
+    },
+    {
+      "path": "conversations/product/manifest.md",
+      "size": 3690,
+      "sha256": "f2c4822fdc2b2cd2d37d42fc7857b9baf051b35071a1709f7a26d83be795075a"
+    },
+    {
+      "path": "conversations/product/slides/人生管理系统4.0-完整设计与模块详解(1).pptx",
+      "size": 418777,
+      "sha256": "d413cd0c7c6d98d37a6301e0ae59718cb116784a944c77c4bb60be825ed54638"
+    },
+    {
+      "path": "conversations/product/slides/人生管理系统4.0-完整设计与模块详解.pptx",
+      "size": 418777,
+      "sha256": "d413cd0c7c6d98d37a6301e0ae59718cb116784a944c77c4bb60be825ed54638"
+    },
+    {
+      "path": "conversations/product/slides/人生管理系统-投资人路演.pptx",
+      "size": 115505,
+      "sha256": "46370625e721287dc69792a7f14d8dd0944bc1b4ae80e0260a2836b0a769ae37"
+    },
+    {
+      "path": "conversations/product/missing-files.md",
+      "size": 1557,
+      "sha256": "181740e7b9c2b4e816e3ab46b936fd165e906192f406628ab79f0e2a076e0fbe"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/CONTEXT_PACKAGE_MANIFEST.md",
+      "size": 822,
+      "sha256": "ce4b4afc5318fc40ccea902b24b35f66d554096c2868c3ba8d1302139f45f64d"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/SPEC.md",
+      "size": 4860,
+      "sha256": "e13e47afaab6a6c121c71f7ad763256e0fbec656cb27f99bd9cff8a776b8bf34"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/TODO.md",
+      "size": 2192,
+      "sha256": "d869692c596143728fb765df021787b2255abe944cdc6fa31edfaa8dbd58c75c"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/ARCHITECTURE.md",
+      "size": 3312,
+      "sha256": "add98917509048af4b501ca90cf3a07b38314525bc2dba5d03c796f01c93e3c6"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/AGENTS.md",
+      "size": 3444,
+      "sha256": "f3a892d94c99afea4332d6fe8f660c21dfcf836da2a9a29f917b3c64529ffe75"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/.env.example",
+      "size": 1012,
+      "sha256": "9321f29708b345024c65f22722ea0747ea7eb49278ae975d40fbb187334f0955"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/README.md",
+      "size": 4618,
+      "sha256": "5cb93a863f738e4d5072d4438bcad5bbd6e10fc020fcf6723875cd9874c54932"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/docs/CONTEXT.md",
+      "size": 3825,
+      "sha256": "12952249c87a47ed394209e4a35bdb6e8e6453a4aec4e2715653f7450414fe58"
+    },
+    {
+      "path": "conversations/product/docs/上下文包展开/人生管理系统4.0-完整设计与模块详解.pptx",
+      "size": 418777,
+      "sha256": "d413cd0c7c6d98d37a6301e0ae59718cb116784a944c77c4bb60be825ed54638"
+    },
+    {
+      "path": "conversations/product/docs/人生管理系统-本地Codex工程上下文包.zip",
+      "size": 376166,
+      "sha256": "6bad449321b736b693b6c66379a83f409d303e469f4f66c59486fc3a9ba742e2"
+    }
+  ]
+}
