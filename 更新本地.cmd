@@ -1,8 +1,7 @@
 @echo off
 chcp 65001 >nul
 cd /d "%~dp0"
-git rev-parse --is-inside-work-tree >nul 2>&1
-if errorlevel 1 (
+if not exist ".git" (
   echo 这是 ZIP 资料副本，不包含 Git 历史。请从 GitHub 下载新版，或使用完整 Git 克隆副本。
   pause
   exit /b 1
