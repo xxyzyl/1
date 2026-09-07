@@ -1,0 +1,65 @@
+{
+  "architecture": "4.0",
+  "snapshot_id": "demo-shared-action",
+  "revision": 1,
+  "period": {
+    "id": "2026-W37",
+    "description": "示例：一份作品同时服务学习和职业展示，时间只计一次",
+    "timezone": "Asia/Shanghai"
+  },
+  "resources": [
+    {
+      "id": "time",
+      "name": "本周业余可支配时间",
+      "unit": "分钟",
+      "capacity": 480,
+      "baseline": 0,
+      "reserve": 60,
+      "source": "示例数据"
+    }
+  ],
+  "actions": [
+    {
+      "id": "family_commitment",
+      "description": "家庭承诺",
+      "owner_domain": "D03",
+      "affected_domains": [],
+      "status": "committed",
+      "demand": {
+        "time": 120
+      }
+    },
+    {
+      "id": "portfolio_piece",
+      "description": "同一份作品同时用于学习和求职展示",
+      "owner_domain": "D05",
+      "affected_domains": [
+        "D04"
+      ],
+      "status": "proposed",
+      "demand": {
+        "time": 180
+      }
+    },
+    {
+      "id": "extra_practice",
+      "description": "额外专项练习",
+      "owner_domain": "D05",
+      "affected_domains": [],
+      "status": "proposed",
+      "demand": {
+        "time": 120
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "shared_piece_once",
+      "action_ids": [
+        "family_commitment",
+        "portfolio_piece",
+        "extra_practice"
+      ]
+    }
+  ]
+}

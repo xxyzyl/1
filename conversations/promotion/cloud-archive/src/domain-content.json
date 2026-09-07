@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "version": "人生管理架构4.0／2026-09-05",
+    "purpose": "完整详细PPT的独立领域内容素材；非用户画像",
+    "source_scope": "九领域原文、领域协议、总控架构、模块清单",
+    "content_status": "方法设计与合成例子；未声称接入个人数据或部署主动服务",
+    "common_rules": [
+      "领域按生活结果划分，模块按知识方法划分",
+      "领域按需启用，未知可保留，不要求九域填满",
+      "一行动一主责一编号，跨域引用不重复资源记账",
+      "各领域按需共享M01、M05、M13、M14、M23",
+      "所有代理按需运行；领域执行者不递归派工"
+    ],
+    "editorial_extensions": [
+      "D08、D09正文补充D06费用接口，依据总控对所有领域统一资金核算的规则；并非新增领域"
+    ],
+    "old_figure_comparison": "未提供旧4.0图文件，不能确认逐项图像差异；当前版本使用D01—D09九领域及M01—M23共享模块。"
+  },
+  "slides": [
+    {
+      "code": "D01",
+      "name": "身体健康与恢复",
+      "claim": "先维护身体功能，再安排可持续负荷。",
+      "result": "日常身体功能、恢复体验和照护连续性。",
+      "observations": [
+        "本人感受、活动受限与作息记录",
+        "医疗资料须有来源；缺失保留未知"
+      ],
+      "actions": [
+        "调整作息和活动",
+        "安排就医支持与恢复时间"
+      ],
+      "dependencies": [
+        "D03：协商照护分工",
+        "D06：核实医疗费用",
+        "D07：改善居住可达性"
+      ],
+      "modules": [
+        "M21：判断健康信息与负荷",
+        "M03：识别波动与测量不确定性"
+      ],
+      "example": "合成：项目临时加量时，先核对既定恢复安排，再比较缩减或延期。",
+      "boundary": "指标不是诊断；不凭聊天开处方，健康底线不能被收入抵消。",
+      "notes": "这一领域维护的是实际身体功能与照护连续性，而不是追求更多指标。数据可以来自用户陈述、明确提供的记录或已授权来源；睡眠时长等只作为观测，不能直接推出疾病。比较方案时，要同时记录时间、费用、支持需求与结果延迟，承认未知并给出停止条件。医疗判断需要当前专业依据。例子是合成场景，不代表用户有健康问题。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D01-身体健康与恢复.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D02",
+      "name": "心理状态与自我调节",
+      "claim": "理解体验与环境，支持用户恢复应对能力。",
+      "result": "主观感受、心理功能和应对能力。",
+      "observations": [
+        "用户叙述、负荷与日常功能变化",
+        "需要与困扰可用文字，不强迫量表"
+      ],
+      "actions": [
+        "表达需要并调整环境负荷",
+        "练习调节或寻求合适支持"
+      ],
+      "dependencies": [
+        "D01：身体状态可能影响体验",
+        "D03：关系支持与冲突",
+        "D04：工作条件和压力来源"
+      ],
+      "modules": [
+        "M10：理解行为机制",
+        "M21：核查健康边界",
+        "M23：澄清价值与意义"
+      ],
+      "example": "合成：反复疲惫先核对工作负荷和恢复条件，再选择减量或支持。",
+      "boundary": "不做聊天诊断；不把环境问题一律归咎性格，也不强算情绪总分。",
+      "notes": "心理状态允许保留叙述、矛盾和不确定，不必为每一种体验设置数字。方案应区分用户能改变的行动、需要环境调整的条件以及需要他人自主配合的部分。出现偏差时，先查记录、负荷和外部变化，不以“意志力不足”解释一切。身体、关系和工作反馈需要总控协调。合成例子只说明核对顺序，不构成对任何人的诊断。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D02-心理状态与自我调节.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D03",
+      "name": "关系、家庭与照护",
+      "claim": "维护自愿关系与共同承诺，补上实际照护缺口。",
+      "result": "互相认可的承诺、陪伴和连续照护。",
+      "observations": [
+        "双方自愿反馈、已认可分工",
+        "陪伴体验与照护缺口；未知待核"
+      ],
+      "actions": [
+        "沟通需要与协商分工",
+        "安排陪伴、照护和替代支持"
+      ],
+      "dependencies": [
+        "D01／D02：衔接治疗与支持",
+        "D06：确认支付能力",
+        "D07：安排居住改造"
+      ],
+      "modules": [
+        "M07：合作与相互回应",
+        "M10：理解冲突",
+        "M17：协商表达",
+        "M20：核查义务"
+      ],
+      "example": "合成：一次陪诊由D03主责，交通与费用引用同一行动，只记一次。",
+      "boundary": "他人的回应由本人决定；消息数量不能代表关系质量，不默认采集亲友资料。",
+      "notes": "关系与照护不是可由总控单方面优化的对象。系统可以帮助整理约定、沟通草稿和资源需求，却不能替他人承诺、揣测真实感受或把沉默当同意。跨域事项设置一个主责领域和唯一行动编号：照护主责在D03，医疗、费用和环境分别补充影响。遇到时间冲突须交总控协调，不能自动删去家庭承诺。反馈应来自自愿沟通。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D03-关系家庭与照护.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D04",
+      "name": "职业、劳动与价值创造",
+      "claim": "让交付有用、条件可接受、发展可持续。",
+      "result": "交付质量、工作条件、角色适配与持续性。",
+      "observations": [
+        "实际成果与使用反馈",
+        "劳动条件、负荷与角色体验"
+      ],
+      "actions": [
+        "比较岗位、项目和合作",
+        "改进产品服务与执行流程"
+      ],
+      "dependencies": [
+        "D05：形成并迁移能力",
+        "D06：记录实际收支",
+        "D08：区分公共志愿责任"
+      ],
+      "modules": [
+        "M08：经济条件",
+        "M09：劳动与分配",
+        "M11：组织机制",
+        "M17：谈判",
+        "M18：交付",
+        "M20：合同"
+      ],
+      "example": "合成：新项目挤占学习时，比较缩小交付范围、延期与不承接。",
+      "boundary": "不预设创业优于就业；营业额、利润、个人收入与资产增长分别核算。",
+      "notes": "本领域先问创造了什么价值、谁验证交付以及工作是否能持续，而非只看忙碌和收入。经济、组织与劳动关系模块提供不同观察角度，不由某一理论直接决定个人取舍。职业行动要与能力形成、资金安排和已有承诺对齐，并保留不承接、试行和缩减等备选。预测收入不能作为已到账现金；项目完成也不自动证明职业适配改善。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D04-职业劳动与价值创造.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D05",
+      "name": "学习、能力与探索",
+      "claim": "用独立完成与迁移表现检验学习。",
+      "result": "能独立完成任务，并保持与迁移能力。",
+      "observations": [
+        "练习、作品和实际任务表现",
+        "延迟回访、迁移表现；缺失待核"
+      ],
+      "actions": [
+        "学习检索、练习和小实验",
+        "形成作品并获取具体反馈"
+      ],
+      "dependencies": [
+        "D04：检验工作应用",
+        "D09：保留纯体验创作的价值"
+      ],
+      "modules": [
+        "M01：论证",
+        "M02：数量",
+        "M03：评估",
+        "M04：实验",
+        "M12：历史语境",
+        "M15：数据",
+        "M16：工具",
+        "M22：原始资料"
+      ],
+      "example": "合成：只有看课计划时，先问是否已有未记录作品，再调整练习安排。",
+      "boundary": "时长与自评分只是代理观测；同一作品跨领域受益，不重复计为独立成果。",
+      "notes": "学习成果应与用户实际目标对应：理解、技能保持和跨情境使用可以采用不同证据。课程观看、打卡和自信感提供投入信息，却不足以证明掌握。缺少作品记录不等于没有学习，主动服务必须先核实。练习和实验要占用真实预算，并检查反馈是否足够成熟。若创作只是出于享受，则可归D09维护，不强迫它证明职业回报。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D05-学习能力与探索.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D06",
+      "name": "财务、资产与保障",
+      "claim": "先守住支付与义务，再比较资金安排。",
+      "result": "支付能力、流动性、债务义务和损失承受范围。",
+      "observations": [
+        "实际到账、支出、余额与到期义务",
+        "来源、币种、周期清楚；未知不填零"
+      ],
+      "actions": [
+        "收支预算与保障梳理",
+        "比较资产和合同安排"
+      ],
+      "dependencies": [
+        "D01／D03：医疗与照护费用",
+        "D04：核实劳动收入",
+        "其余领域：统一记录资金需求"
+      ],
+      "modules": [
+        "M02：数量核算",
+        "M03：风险波动",
+        "M08：经济条件",
+        "M19：财务安排",
+        "M20：合同义务"
+      ],
+      "example": "合成：新项目预计下月付款，本周预算仍只使用已确认可支配资金。",
+      "boundary": "资金可行不等于值得做；预测收入不作现金，产品与法规另查当前一手来源。",
+      "notes": "财务为所有领域提供统一资金约束，但不代替用户判断各领域价值。固定义务、唯一行动需求和明确保留量要在同一周期与币种下比较，互斥方案分别核算。不能用一个财务分数抵消照护、健康或法律底线。合成例子突出预测和到账的区别，不涉及具体投资建议。任何交易都需要真实授权与工具能力，生成建议并不代表成交。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D06-财务资产与保障.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D07",
+      "name": "居住、日常与基础设施",
+      "claim": "减少生活中断，让环境、事务与资料可靠可用。",
+      "result": "生活可用性、事务连续性及工具可靠性。",
+      "observations": [
+        "居住交通障碍、维护和到期事项",
+        "资料可恢复性与实际使用困难"
+      ],
+      "actions": [
+        "安排家务、维护、搬迁与交通",
+        "管理证照、数字资料和权限"
+      ],
+      "dependencies": [
+        "D03：照护便利与家务分工",
+        "D01：医疗和无障碍需求",
+        "D06：维护与搬迁费用"
+      ],
+      "modules": [
+        "M06：时段与资源",
+        "M15：数据安全",
+        "M16：适度自动化",
+        "M18：任务连续性",
+        "M20：行政与合同"
+      ],
+      "example": "合成：证件临近到期，先核对时区、材料与预约，再安排办理。",
+      "boundary": "不默认开启定位、电脑操作或账户采集；工具与流程应减少实际维护负担。",
+      "notes": "基础设施包含物理环境、行政事务与数字资料，不只是家务清单。任务是否有用，要看它能否恢复可用性、避免中断或减少重复劳动。具体行动需核对前置材料、时间窗口、费用和权限。自动化只在能力可验证且已有授权内配置，不能以便利为理由扩大采集。维护成本也是负担，必要时应简化工具和记录，而不是不断增加应用。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D07-居住日常与基础设施.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D08",
+      "name": "社群、公共参与与生态责任",
+      "claim": "以共同承诺与实际影响衡量公共参与。",
+      "result": "共同责任、公共影响和受影响者自愿反馈。",
+      "observations": [
+        "承诺落实、实际受益与外部影响",
+        "受影响者反馈；不确定效果保留"
+      ],
+      "actions": [
+        "志愿服务、社群协作和依法参与",
+        "减少环境负担并检查实际效果"
+      ],
+      "dependencies": [
+        "D03：区分私人关系责任",
+        "D04：区分工作交付",
+        "D06：核对捐助与活动预算"
+      ],
+      "modules": [
+        "M07：合作",
+        "M09：分配与结构",
+        "M11：制度组织",
+        "M12：历史背景",
+        "M20：合法参与",
+        "M23：伦理取舍"
+      ],
+      "example": "合成：报名志愿活动前，先核对照护承诺、交通与组织方实际需要。",
+      "boundary": "次数、曝光和声望不充分证明贡献；不假定他人价值相同或代其表达意愿。",
+      "notes": "该领域维护超出私人关系的共同责任，但不要求每个人都同时承担大量公共项目。参与应出于用户认可，并尊重受影响者自主性。判断贡献需要实际影响和反馈，不能把社交曝光、报名或出席直接等同于结果。D06是根据统一资金规则补充的跨域接口。建议必须检查已有责任、资金和时间，机会出现时仍保留暂不参与的方案。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D08-社群公共参与与生态责任.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    },
+    {
+      "code": "D09",
+      "name": "休闲、审美与生命体验",
+      "claim": "让玩乐、创作与自由时间保有自身价值。",
+      "result": "满足感、自愿性、体验与自由空间。",
+      "observations": [
+        "用户自愿描述体验与满足",
+        "实际自由时间、负担及是否被迫"
+      ],
+      "actions": [
+        "艺术、游戏、旅行和自然体验",
+        "留白、闲暇或暂停已有活动"
+      ],
+      "dependencies": [
+        "D01：识别身体恢复需要",
+        "D03：协商共同体验",
+        "D06：核对活动费用且不重复记账"
+      ],
+      "modules": [
+        "M10：理解体验与行为",
+        "M23：审美、创作与价值取舍"
+      ],
+      "example": "合成：项目提前完成后，可以保留空闲，也可自愿安排一次展览体验。",
+      "boundary": "体验无需证明生产率或收入回报；不强行量化幸福，不把全部空闲填成任务。",
+      "notes": "休闲是人生结果的一部分，不能仅被当作工作恢复工具。用户可以选择创作、玩乐、旅行或什么也不安排，也可以用自己的语言反馈体验。与亲友同行时，其他人的意愿须通过协商确认。一次旅行即使同时改善关系和体验，费用与时间也只记一次。D06是共同资源规则的补充接口。例子中释放的时间不是系统自动新增任务的授权。建议、用户选择与实际执行仍需分别记录。",
+      "source_paths": [
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域/D09-休闲审美与生命体验.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生领域协议.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/人生总控架构.md",
+        "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块清单.json"
+      ]
+    }
+  ]
+}

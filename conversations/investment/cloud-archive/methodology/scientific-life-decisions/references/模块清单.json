@@ -1,0 +1,209 @@
+[
+  {
+    "id": "M01",
+    "name": "life-logic",
+    "title": "逻辑、认识论与科学方法",
+    "short_title": "逻辑与科学方法",
+    "path": "references/模块/M01-逻辑与科学方法.md",
+    "trigger": "所有决策；尤其是比较相互冲突的说法、检查宣传或专家意见、从少量经历推出一般结论时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M02",
+    "name": "life-mathematics",
+    "title": "基础数学",
+    "short_title": "基础数学",
+    "path": "references/模块/M02-基础数学.md",
+    "trigger": "需要表达数量关系、增长或衰减、复利、资源约束、比较量级，以及建立统计或优化模型时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M03",
+    "name": "life-statistics",
+    "title": "概率论与统计学",
+    "short_title": "概率与统计",
+    "path": "references/模块/M03-概率与统计.md",
+    "trigger": "从样本推断总体、比较风险和波动、更新判断、分析调查或行为记录、评价预测表现时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M04",
+    "name": "life-causality",
+    "title": "因果推断与实验设计",
+    "short_title": "因果推断与实验",
+    "path": "references/模块/M04-因果推断与实验.md",
+    "trigger": "要判断培训、习惯、政策、营销或产品改动是否带来变化，或要依据观察数据决定采取某种干预时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M05",
+    "name": "life-decision",
+    "title": "决策理论",
+    "short_title": "决策理论",
+    "path": "references/模块/M05-决策理论.md",
+    "trigger": "所有决策；重点用于职业、学习、项目、居住和其他有明显机会成本或长期影响的选择。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M06",
+    "name": "life-operations",
+    "title": "运筹学",
+    "short_title": "运筹与资源配置",
+    "path": "references/模块/M06-运筹与资源配置.md",
+    "trigger": "任务之间争夺时间、预算、人力或设备，需要排班、安排学习、选择项目组合或设计服务流程时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M07",
+    "name": "life-games",
+    "title": "博弈论",
+    "short_title": "博弈与合作",
+    "path": "references/模块/M07-博弈与合作.md",
+    "trigger": "合作、谈判、竞争、分工或规则设计中，结果会受到其他参与者主动回应的影响时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M08",
+    "name": "life-economics",
+    "title": "微观经济学与宏观经济学",
+    "short_title": "微观与宏观经济",
+    "path": "references/模块/M08-微观与宏观经济.md",
+    "trigger": "评价商业机会、定价、收入来源、岗位与行业选择，或分析经济环境对个人计划的影响时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M09",
+    "name": "life-political-economy",
+    "title": "马克思主义政治经济学",
+    "short_title": "马克思主义政治经济学",
+    "path": "references/模块/M09-马克思主义政治经济学.md",
+    "trigger": "分析劳动与资本关系、组织中的分配与控制、产业变化、利益冲突，以及个体选择受到的结构性影响时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M10",
+    "name": "life-psychology",
+    "title": "心理学与行为科学",
+    "short_title": "心理与行为",
+    "path": "references/模块/M10-心理与行为.md",
+    "trigger": "拖延、习惯变化、情绪影响判断、沟通冲突、群体压力或用户希望了解自己的行为模式时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M11",
+    "name": "life-institutions",
+    "title": "社会学、政治学、制度分析与组织行为",
+    "short_title": "社会制度与组织",
+    "path": "references/模块/M11-社会制度与组织.md",
+    "trigger": "个人努力与组织结果不一致、流程受阻、岗位或团队选择、跨部门协作、制度变更和利益协调时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M12",
+    "name": "life-history",
+    "title": "历史与思想史",
+    "short_title": "历史与思想史",
+    "path": "references/模块/M12-历史与思想史.md",
+    "trigger": "需要理解制度、行业或思想的形成过程，使用历史类比，或判断“过去发生过，所以未来也会如此”的主张时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M13",
+    "name": "life-investigation",
+    "title": "毛泽东思想中的调查研究、实践与矛盾分析",
+    "short_title": "调查研究与实践",
+    "path": "references/模块/M13-调查研究与实践.md",
+    "trigger": "问题描述笼统、缺少一线情况、多种矛盾交织、资源有限需要识别阶段重点，或行动需要持续检验时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M14",
+    "name": "life-systems",
+    "title": "系统科学、控制论与钱学森系统工程",
+    "short_title": "系统与控制",
+    "path": "references/模块/M14-系统与控制.md",
+    "trigger": "局部改进引发其他问题、结果存在延迟、多个因素相互强化或抵消，以及管理长期目标与复杂项目时。",
+    "primary_layer": "决策能力"
+  },
+  {
+    "id": "M15",
+    "name": "life-data",
+    "title": "计算机、数据处理与信息安全",
+    "short_title": "计算机数据与安全",
+    "path": "references/模块/M15-计算机数据与安全.md",
+    "trigger": "分析表格、整理个人记录、处理大量文件、重复计算、建立工具或连接数据源时。",
+    "primary_layer": "执行与反馈"
+  },
+  {
+    "id": "M16",
+    "name": "life-ai",
+    "title": "机器学习、大模型与自动化",
+    "short_title": "人工智能与自动化",
+    "path": "references/模块/M16-人工智能与自动化.md",
+    "trigger": "考虑把重复工作交给 AI、训练或评价模型、从材料抽取信息、生成内容，或接入自动任务时。",
+    "primary_layer": "执行与反馈"
+  },
+  {
+    "id": "M17",
+    "name": "life-communication",
+    "title": "语言表达、沟通与谈判",
+    "short_title": "表达沟通与谈判",
+    "path": "references/模块/M17-表达沟通与谈判.md",
+    "trigger": "汇报、求职、合作提案、家庭协商、反馈、争议解决，或需要把复杂问题讲清楚时。",
+    "primary_layer": "执行与反馈"
+  },
+  {
+    "id": "M18",
+    "name": "life-execution",
+    "title": "管理与执行",
+    "short_title": "管理与执行",
+    "path": "references/模块/M18-管理与执行.md",
+    "trigger": "目标长期停留在想法、任务很多但进展不清、多人协作、计划变化或需要稳定推进时。",
+    "primary_layer": "执行与反馈"
+  },
+  {
+    "id": "M19",
+    "name": "life-finance",
+    "title": "个人财务",
+    "short_title": "个人财务",
+    "path": "references/模块/M19-个人财务.md",
+    "trigger": "评价收入中断承受力、工作转换、学习投入、大额支出、债务、保障或投资选择时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M20",
+    "name": "life-law",
+    "title": "法律基础",
+    "short_title": "法律基础",
+    "path": "references/模块/M20-法律基础.md",
+    "trigger": "签约、就业、合作、经营、数据使用、争议处理或重大行动可能产生明确法律后果时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M21",
+    "name": "life-health",
+    "title": "健康基础",
+    "short_title": "健康基础",
+    "path": "references/模块/M21-健康基础.md",
+    "trigger": "规划可持续作息与活动、判断健康信息、评估计划对身体的负担，或健康状况影响其他人生选择时。",
+    "primary_layer": "知识能力"
+  },
+  {
+    "id": "M22",
+    "name": "life-english-research",
+    "title": "英语与原始资料检索",
+    "short_title": "英语与原始资料检索",
+    "path": "references/模块/M22-英语与原始资料检索.md",
+    "trigger": "中文转述不足、需要一手知识、验证术语与方法细节、学习技术或阅读研究材料时。",
+    "primary_layer": "执行与反馈"
+  },
+  {
+    "id": "M23",
+    "name": "life-values",
+    "title": "文学、艺术、音乐、美学与伦理",
+    "short_title": "文学艺术与伦理",
+    "path": "references/模块/M23-文学艺术与伦理.md",
+    "trigger": "伦理与价值部分用于所有决策；文学艺术音乐与美学在理解复杂经验、表达情感、选择生活方式、创作或审美判断时按需调用。",
+    "primary_layer": "知识能力"
+  }
+]

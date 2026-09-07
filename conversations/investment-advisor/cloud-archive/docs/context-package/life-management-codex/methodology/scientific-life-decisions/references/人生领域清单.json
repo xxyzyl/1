@@ -1,0 +1,124 @@
+[
+  {
+    "id": "D01",
+    "name": "domain-body",
+    "title": "身体健康与恢复",
+    "path": "references/人生领域/D01-身体健康与恢复.md",
+    "trigger": "分析身体健康与恢复的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M21",
+      "M03"
+    ]
+  },
+  {
+    "id": "D02",
+    "name": "domain-mind",
+    "title": "心理状态与自我调节",
+    "path": "references/人生领域/D02-心理状态与自我调节.md",
+    "trigger": "分析心理状态与自我调节的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M10",
+      "M21",
+      "M23"
+    ]
+  },
+  {
+    "id": "D03",
+    "name": "domain-relationships",
+    "title": "关系家庭与照护",
+    "path": "references/人生领域/D03-关系家庭与照护.md",
+    "trigger": "分析关系家庭与照护的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M07",
+      "M10",
+      "M17",
+      "M20"
+    ]
+  },
+  {
+    "id": "D04",
+    "name": "domain-work",
+    "title": "职业劳动与价值创造",
+    "path": "references/人生领域/D04-职业劳动与价值创造.md",
+    "trigger": "分析职业劳动与价值创造的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M08",
+      "M09",
+      "M11",
+      "M17",
+      "M18",
+      "M20"
+    ]
+  },
+  {
+    "id": "D05",
+    "name": "domain-learning",
+    "title": "学习能力与探索",
+    "path": "references/人生领域/D05-学习能力与探索.md",
+    "trigger": "分析学习能力与探索的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M12",
+      "M15",
+      "M16",
+      "M22"
+    ]
+  },
+  {
+    "id": "D06",
+    "name": "domain-finances",
+    "title": "财务资产与保障",
+    "path": "references/人生领域/D06-财务资产与保障.md",
+    "trigger": "分析财务资产与保障的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M02",
+      "M03",
+      "M08",
+      "M19",
+      "M20"
+    ]
+  },
+  {
+    "id": "D07",
+    "name": "domain-infrastructure",
+    "title": "居住日常与基础设施",
+    "path": "references/人生领域/D07-居住日常与基础设施.md",
+    "trigger": "分析居住日常与基础设施的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M06",
+      "M15",
+      "M16",
+      "M18",
+      "M20"
+    ]
+  },
+  {
+    "id": "D08",
+    "name": "domain-community",
+    "title": "社群公共参与与生态责任",
+    "path": "references/人生领域/D08-社群公共参与与生态责任.md",
+    "trigger": "分析社群公共参与与生态责任的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M07",
+      "M09",
+      "M11",
+      "M12",
+      "M20",
+      "M23"
+    ]
+  },
+  {
+    "id": "D09",
+    "name": "domain-experience",
+    "title": "休闲审美与生命体验",
+    "path": "references/人生领域/D09-休闲审美与生命体验.md",
+    "trigger": "分析休闲审美与生命体验的状态、实际行动与跨领域影响。",
+    "knowledge_modules": [
+      "M10",
+      "M23"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+{"task_id": "synthetic-route-v3", "decision_id": "synthetic-learning", "phase": "S4", "revision": 2, "question": "核对时间约束", "goals_constraints": "4小时预算", "facts_evidence": "合成题设E1：方案需3小时", "unknowns": "产出质量未知", "deliverable": "时间可行性及实际计算"}

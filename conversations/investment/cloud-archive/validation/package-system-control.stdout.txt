@@ -1,0 +1,97 @@
+{
+  "scope": "synthetic, finite-dimensional discrete-time LTI examples only",
+  "assumptions": [
+    "specified exact model",
+    "no noise",
+    "unbounded control input",
+    "fixed parameters",
+    "no real-person data or effectiveness claims"
+  ],
+  "feedback": {
+    "plant": "x[t+1] = x[t] + u[t]",
+    "initial": "x[-1]=x[0]=1",
+    "policy": "u[t]=-k*x[t-delay]",
+    "cases": [
+      {
+        "delay_steps": 0,
+        "gain": "1/2",
+        "spectral_radius": 0.5,
+        "analytic_classification": "asymptotically_stable",
+        "x40": 9.094947017729282e-13,
+        "peak_absolute_x_in_last_10_samples": 4.656612873077393e-10
+      },
+      {
+        "delay_steps": 0,
+        "gain": "3/2",
+        "spectral_radius": 0.5,
+        "analytic_classification": "asymptotically_stable",
+        "x40": 9.094947017729282e-13,
+        "peak_absolute_x_in_last_10_samples": 4.656612873077393e-10
+      },
+      {
+        "delay_steps": 1,
+        "gain": "1/2",
+        "spectral_radius": 0.7071067811865476,
+        "analytic_classification": "asymptotically_stable",
+        "x40": 9.5367431640625e-07,
+        "peak_absolute_x_in_last_10_samples": 1.52587890625e-05
+      },
+      {
+        "delay_steps": 1,
+        "gain": "1",
+        "spectral_radius": 1.0,
+        "analytic_classification": "unit_circle_boundary_not_asymptotically_stable",
+        "x40": 0.0,
+        "peak_absolute_x_in_last_10_samples": 1.0
+      },
+      {
+        "delay_steps": 1,
+        "gain": "3/2",
+        "spectral_radius": 1.2247448713915892,
+        "analytic_classification": "unstable",
+        "x40": -4136.92977809906,
+        "peak_absolute_x_in_last_10_samples": 4136.92977809906
+      }
+    ]
+  },
+  "hidden_mode": {
+    "A": [
+      [
+        0.8,
+        0
+      ],
+      [
+        0,
+        1.1
+      ]
+    ],
+    "B": [
+      1,
+      0
+    ],
+    "C": [
+      1,
+      0
+    ],
+    "initial_x": [
+      0,
+      1
+    ],
+    "input": "zero",
+    "ranks_reachability_observability": [
+      1,
+      1
+    ],
+    "all_output_samples": 0,
+    "hidden_x40": 45.25925556817595,
+    "B_and_C_both_1_1_ranks": [
+      2,
+      2
+    ],
+    "limit": "Full rank does not guarantee a feasible input with resource limits or reliable estimation with noise."
+  },
+  "validation": {
+    "status": "passed",
+    "check_groups": 13
+  }
+}

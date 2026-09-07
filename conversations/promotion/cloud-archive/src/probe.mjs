@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import {Presentation, PresentationFile} from '@oai/artifact-tool';
+const p=Presentation.create({slideSize:{width:1280,height:720}});
+const s=p.slides.add();s.background.fill='#FFFFFF';
+const t=s.shapes.add({geometry:'textbox',position:{left:60,top:80,width:1150,height:100},fill:'none',line:{fill:'none',width:0}});
+t.text='人生管理系统：目标、证据与选择';t.text.style={fontSize:48,typeface:'Droid Sans Fallback',color:'#111111',bold:true,insets:{left:0,right:0,top:0,bottom:0},autoFit:'none',wrap:'none'};
+const q=s.shapes.add({geometry:'textbox',position:{left:60,top:220,width:1000,height:100},fill:'none',line:{fill:'none',width:0}});
+q.text='第一行：先维护实际结果，关注整体资源。\n第二行：建议、选择、执行分别记录。';q.text.style={fontSize:24,typeface:'Droid Sans Fallback',color:'#333333',lineSpacing:1.3,insets:{left:0,right:0,top:0,bottom:0},autoFit:'none',wrap:'none'};
+const tb=s.tables.add({rows:3,columns:2,left:60,top:360,width:1160,height:220,values:[['阶段','必要产物'],['定义问题','目标、期限与约束'],['建立事实','证据账本与关键未知']],columnWidths:[300,860]});
+tb.borders.assign({fill:'#D6D6D6',width:1});
+tb.cells.block({row:0,column:0,rowCount:3,columnCount:2}).assign({fill:'#FFFFFF',textStyle:{fontSize:24,typeface:'Droid Sans Fallback',color:'#111111'},margins:{left:14,right:14,top:10,bottom:10}});
+tb.cells.block({row:0,column:0,rowCount:1,columnCount:2}).assign({fill:'#EEEEEE',textStyle:{bold:true}});
+s.speakerNotes.textFrame.setText('这是备注。\n[Sources]\n系统设计文件\n[/Sources]');
+await fs.writeFile('/workspace/scratch/d317e6067fb4/ppt-life/probe.png',new Uint8Array(await (await p.export({slide:s,format:'png',scale:1})).arrayBuffer()));
+await fs.writeFile('/workspace/scratch/d317e6067fb4/ppt-life/probe-layout.json',await (await s.export({format:'layout'})).text());
+await (await PresentationFile.exportPptx(p)).save('/workspace/scratch/d317e6067fb4/ppt-life/probe.pptx');
+console.log('probe complete');

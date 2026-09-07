@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/workspace/scratch/6d107901a9b1/agent-collaboration/科学决策引擎3.0子智能体协作图.png",
+    "bytes": 1695039,
+    "dimensions": [
+      3600,
+      5850
+    ],
+    "sha256": "1f8f471641b722d7143b10ca00f932f6340decc22f4c9de5b7ac36e78e93a30c"
+  },
+  {
+    "path": "/workspace/scratch/6d107901a9b1/agent-collaboration/完整分段/协作图01-任务拆分与派工.png",
+    "bytes": 316932,
+    "dimensions": [
+      2400,
+      1440
+    ],
+    "sha256": "0c68325c4b95a76ab2ee4c32737eabf532ab929b1954c3011d3f87c5846f65a3"
+  },
+  {
+    "path": "/workspace/scratch/6d107901a9b1/agent-collaboration/完整分段/协作图02-产物验收与复核.png",
+    "bytes": 261296,
+    "dimensions": [
+      2400,
+      945
+    ],
+    "sha256": "9ddc211ad1168f1be847e947d52cb6f3392f2d99ec039f6f32808075349bb139"
+  },
+  {
+    "path": "/workspace/scratch/6d107901a9b1/agent-collaboration/完整分段/协作图03-知识模块与交付物.png",
+    "bytes": 446606,
+    "dimensions": [
+      2400,
+      1530
+    ],
+    "sha256": "b65aa566ef8d810c7b7f02b4fcd38fed3ac0573cbf1735abd22ae3cef3f0d8f6"
+  }
+]

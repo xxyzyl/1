@@ -1,0 +1,74 @@
+{
+  "structure_cases": [
+    {
+      "case": "完整示例",
+      "expected_valid": true,
+      "actual_valid": true
+    },
+    {
+      "case": "空白模板",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "空字段:记录编号",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "空字段:来源",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "空字段:复核方式",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "缺少章节",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "未知方法",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "缺少基础方法",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "未处理阻断缺口",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "重复字段",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "全篇在代码块",
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "case": "全篇为引用",
+      "expected_valid": false,
+      "actual_valid": false
+    }
+  ],
+  "method_modules": 23,
+  "core_source_counts": [
+    15,
+    18,
+    15,
+    18
+  ],
+  "core_source_total": 66,
+  "broken_relative_markdown_links": [],
+  "agents_bytes": 5827
+}

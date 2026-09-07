@@ -1,0 +1,26 @@
+[
+  {
+    "name": "人生管理系统4.0-总体设计图",
+    "dimensions": [
+      4800,
+      3840
+    ],
+    "bytes": 1597402,
+    "sha256": "5452897927d2be93308983ec55de5d8bbb95aa396184639ea5370094d87f909b",
+    "text_count": 100,
+    "smallest_font": 17,
+    "complete_png": true
+  },
+  {
+    "name": "人生管理系统4.0-决策流程图",
+    "dimensions": [
+      4800,
+      4224
+    ],
+    "bytes": 1959839,
+    "sha256": "0f46c48d3ccf464c697575450cd24fd26df18ef19ee2d33669d755ad456b7dc7",
+    "text_count": 89,
+    "smallest_font": 17,
+    "complete_png": true
+  }
+]

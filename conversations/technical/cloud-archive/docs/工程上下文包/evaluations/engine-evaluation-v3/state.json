@@ -1,0 +1,86 @@
+{
+  "protocol": "3.0",
+  "decision_id": "synthetic-learning",
+  "revision": 1,
+  "problem": {
+    "question": "本周选择哪个学习计划？",
+    "goal": "完成一份汇总表",
+    "source": "合成任务题设",
+    "constraints": [
+      {
+        "id": "C1",
+        "description": "最多4小时",
+        "source": "合成题设"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "source": "合成题设：A需8小时，B需3小时",
+      "date": "未知",
+      "checked_at": "2026-09-05",
+      "status": "用户陈述",
+      "decisive": true
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "description": "8小时课程，需8>4小时",
+      "constraint_checks": {
+        "C1": "不满足"
+      }
+    },
+    {
+      "id": "B",
+      "description": "3小时课程，可留1小时机动",
+      "constraint_checks": {
+        "C1": "满足"
+      }
+    }
+  ],
+  "gaps": [],
+  "comparison": {
+    "revision": 1,
+    "input_fingerprint": "c5d855ee648463db5e2296b6b2d4613ee292bd8e4ffdd51eb5b24f2f42aa2fb9",
+    "method": "硬约束筛选与可行方案比较",
+    "artifact": "A:8>4；B:3<=4，留1小时；只讨论本周时间可行性",
+    "option_ids": [
+      "A",
+      "B"
+    ],
+    "evidence_ids": [
+      "E1"
+    ],
+    "strongest_objection": "满足时间约束不保证学习效果",
+    "reversal_conditions": [
+      "若实际可用时间不足3小时，B也不满足约束"
+    ],
+    "conditions": []
+  },
+  "review": {
+    "revision": 1,
+    "input_fingerprint": "c5d855ee648463db5e2296b6b2d4613ee292bd8e4ffdd51eb5b24f2f42aa2fb9",
+    "completed": true,
+    "mode": "主智能体自审",
+    "artifact": "已复算8>4与3<=4，仅核对合成题设",
+    "target_fingerprint": "ca225b62d5aaa7cbf3ebbca4e520c63a46109d12196976696616dca2fd4bf7b7"
+  },
+  "recommendation": {
+    "status": "建议可供选择",
+    "option_ids": [
+      "B"
+    ]
+  },
+  "user_choice": {
+    "status": "未决定",
+    "option_ids": [],
+    "source": ""
+  },
+  "execution": {
+    "status": "未开始",
+    "authorization_source": "",
+    "action_record": ""
+  }
+}

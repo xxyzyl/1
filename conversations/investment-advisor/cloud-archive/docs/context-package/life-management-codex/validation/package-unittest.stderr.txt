@@ -1,0 +1,37 @@
+test_changed_input_cannot_reuse_review_even_without_revision_bump (test_decision_engine.EngineRegression.test_changed_input_cannot_reuse_review_even_without_revision_bump) ... ok
+test_changed_selected_content_does_not_inherit_old_choice (test_decision_engine.EngineRegression.test_changed_selected_content_does_not_inherit_old_choice) ... ok
+test_decisive_evidence_cannot_be_omitted_from_comparison (test_decision_engine.EngineRegression.test_decisive_evidence_cannot_be_omitted_from_comparison) ... ok
+test_different_feasible_recommendation_requires_review (test_decision_engine.EngineRegression.test_different_feasible_recommendation_requires_review) ... ok
+test_execution_claim_needs_authorization_reference (test_decision_engine.EngineRegression.test_execution_claim_needs_authorization_reference) ... ok
+test_honest_pending_record_is_valid_but_not_ready (test_decision_engine.EngineRegression.test_honest_pending_record_is_valid_but_not_ready) ... ok
+test_legacy_v2_record_still_reads_without_state (test_decision_engine.EngineRegression.test_legacy_v2_record_still_reads_without_state) ... ok
+test_markdown_must_match_structured_record (test_decision_engine.EngineRegression.test_markdown_must_match_structured_record) ... ok
+test_missing_option_and_duplicate_ids_rejected (test_decision_engine.EngineRegression.test_missing_option_and_duplicate_ids_rejected) ... ok
+test_no_execution_record_does_not_imply_not_started (test_decision_engine.EngineRegression.test_no_execution_record_does_not_imply_not_started) ... ok
+test_old_choice_does_not_authorize_or_improve_new_advice (test_decision_engine.EngineRegression.test_old_choice_does_not_authorize_or_improve_new_advice) ... ok
+test_placeholder_sources_and_review_identity_do_not_count (test_decision_engine.EngineRegression.test_placeholder_sources_and_review_identity_do_not_count) ... ok
+test_rejected_alternative_does_not_block_feasible_choice (test_decision_engine.EngineRegression.test_rejected_alternative_does_not_block_feasible_choice) ... ok
+test_rewritten_comparison_cannot_reuse_prior_review (test_decision_engine.EngineRegression.test_rewritten_comparison_cannot_reuse_prior_review) ... ok
+test_score_cannot_override_time_constraint (test_decision_engine.EngineRegression.test_score_cannot_override_time_constraint) ... ok
+test_subagent_review_needs_actual_task_reference (test_decision_engine.EngineRegression.test_subagent_review_needs_actual_task_reference) ... ok
+test_unknown_hard_constraint_blocks_recommended_option (test_decision_engine.EngineRegression.test_unknown_hard_constraint_blocks_recommended_option) ... ok
+test_unverified_key_premise_only_supports_explicit_condition (test_decision_engine.EngineRegression.test_unverified_key_premise_only_supports_explicit_condition) ... ok
+test_version_bump_invalidates_both_artifacts (test_decision_engine.EngineRegression.test_version_bump_invalidates_both_artifacts) ... ok
+test_baseline_only_is_valid (test_life_resources.ResourceTests.test_baseline_only_is_valid) ... ok
+test_cannot_drop_existing_commitment (test_life_resources.ResourceTests.test_cannot_drop_existing_commitment) ... ok
+test_capacity_change_changes_fingerprint (test_life_resources.ResourceTests.test_capacity_change_changes_fingerprint) ... ok
+test_cross_domain_action_is_counted_once (test_life_resources.ResourceTests.test_cross_domain_action_is_counted_once) ... ok
+test_duplicate_action_rejected (test_life_resources.ResourceTests.test_duplicate_action_rejected) ... ok
+test_duplicate_json_fields_are_rejected (test_life_resources.ResourceTests.test_duplicate_json_fields_are_rejected) ... ok
+test_each_resource_requires_explicit_demand (test_life_resources.ResourceTests.test_each_resource_requires_explicit_demand) ... ok
+test_exact_decimal_boundary (test_life_resources.ResourceTests.test_exact_decimal_boundary) ... ok
+test_joint_conflict_and_alternatives (test_life_resources.ResourceTests.test_joint_conflict_and_alternatives) ... ok
+test_known_conflict_survives_unknown (test_life_resources.ResourceTests.test_known_conflict_survives_unknown) ... ok
+test_malformed_enum_is_rejected (test_life_resources.ResourceTests.test_malformed_enum_is_rejected) ... ok
+test_numeric_validation (test_life_resources.ResourceTests.test_numeric_validation) ... ok
+test_unknown_does_not_become_zero (test_life_resources.ResourceTests.test_unknown_does_not_become_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.011s
+
+OK

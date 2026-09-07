@@ -1,0 +1,82 @@
+{
+  "architecture": "4.0",
+  "snapshot_id": "demo-career-transition",
+  "revision": 1,
+  "period": {
+    "id": "2026-W37",
+    "description": "示例：每周业余时间预算，覆盖家庭承诺、副业接单、学习和机动预留",
+    "timezone": "Asia/Shanghai"
+  },
+  "resources": [
+    {
+      "id": "time",
+      "name": "本周业余可支配时间",
+      "unit": "分钟",
+      "capacity": 600,
+      "baseline": 0,
+      "reserve": 60,
+      "source": "示例数据"
+    }
+  ],
+  "actions": [
+    {
+      "id": "family_commitment",
+      "description": "已承诺的家庭陪伴",
+      "owner_domain": "D03",
+      "affected_domains": [],
+      "status": "committed",
+      "demand": {
+        "time": 120
+      }
+    },
+    {
+      "id": "freelance_project",
+      "description": "副业接单交付",
+      "owner_domain": "D04",
+      "affected_domains": [
+        "D05",
+        "D06"
+      ],
+      "status": "proposed",
+      "demand": {
+        "time": 300
+      }
+    },
+    {
+      "id": "learning_plan",
+      "description": "职业转型学习",
+      "owner_domain": "D05",
+      "affected_domains": [
+        "D04"
+      ],
+      "status": "proposed",
+      "demand": {
+        "time": 240
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "all_together",
+      "action_ids": [
+        "family_commitment",
+        "freelance_project",
+        "learning_plan"
+      ]
+    },
+    {
+      "id": "project_only",
+      "action_ids": [
+        "family_commitment",
+        "freelance_project"
+      ]
+    },
+    {
+      "id": "learning_only",
+      "action_ids": [
+        "family_commitment",
+        "learning_plan"
+      ]
+    }
+  ]
+}

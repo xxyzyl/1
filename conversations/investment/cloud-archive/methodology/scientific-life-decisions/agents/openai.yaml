@@ -1,0 +1,13 @@
+interface:
+  display_name: 科学决策与人生管理
+  short_description: 协调九个人生领域，主动补齐关键资料，依据证据提出改进并追踪行动效果
+  default_prompt: 使用 $scientific-life-decisions 检查当前目标与已有资料，主动补问关键缺口，协调相关领域和资源，提出最值得做的一项改进并安排反馈。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

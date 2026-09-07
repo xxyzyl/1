@@ -1,0 +1,21 @@
+{
+  "architecture": "4.0",
+  "snapshot_id": "待建立个人快照",
+  "revision": 1,
+  "period": {
+    "id": "待填写周期ID",
+    "description": "明确具体起止日期，以及预算覆盖全部生活还是扣除固定工作后的增量安排",
+    "timezone": "待填写实际时区"
+  },
+  "resources": [
+    {"id": "time", "name": "本周期覆盖范围内时间", "unit": "分钟", "capacity": null, "baseline": null, "reserve": null, "source": "待填写用户实际声明或记录"},
+    {"id": "money", "name": "本周期覆盖范围内资金", "unit": "待填写币种", "capacity": null, "baseline": null, "reserve": null, "source": "待填写用户实际声明或记录"}
+  ],
+  "actions": [
+    {"id": "A01", "description": "待填写唯一行动；已计入baseline的事项不要再次填写", "owner_domain": "D05", "affected_domains": [], "status": "proposed", "demand": {"time": null, "money": null}}
+  ],
+  "scenarios": [
+    {"id": "维持基线", "action_ids": []},
+    {"id": "考虑A01", "action_ids": ["A01"]}
+  ]
+}

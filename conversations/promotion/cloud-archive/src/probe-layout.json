@@ -1,0 +1,396 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/bms3wl",
+    "id": "bms3wl",
+    "slide": 1,
+    "layoutId": "d640c0df-210d-44b8-b6b2-7f646128185c",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "da3b9a8e-395a-45d9-9e01-f5cbd9780ae4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Droid Sans Fallback"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d640c0df-210d-44b8-b6b2-7f646128185c",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "da3b9a8e-395a-45d9-9e01-f5cbd9780ae4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "da3b9a8e-395a-45d9-9e01-f5cbd9780ae4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qhcry587",
+      "id": "1",
+      "bbox": [
+        60,
+        80,
+        1150,
+        100
+      ],
+      "geometry": "rect",
+      "text": "人生管理系统：目标、证据与选择",
+      "textPreview": "人生管理系统：目标、证据与选择",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "Droid Sans Fallback",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "wrap": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "人生管理系统：目标、证据与选择"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "人生管理系统：目标、证据与选择",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "typeface": "Droid Sans Fallback",
+            "color": "#111111",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "人生管理系统：目标、证据与选择",
+              "fontSize": 48,
+              "typeface": "Droid Sans Fallback",
+              "color": "#111111",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dknq9k7y",
+      "id": "2",
+      "bbox": [
+        60,
+        220,
+        1000,
+        100
+      ],
+      "geometry": "rect",
+      "text": "第一行：先维护实际结果，关注整体资源。\n第二行：建议、选择、执行分别记录。",
+      "textPreview": "第一行：先维护实际结果，关注整体资源。 | 第二行：建议、选择、执行分别记录。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Droid Sans Fallback",
+        "color": "#333333",
+        "alignment": "left",
+        "wrap": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "第一行：先维护实际结果，关注整体资源。"
+          },
+          {
+            "index": 2,
+            "text": "第二行：建议、选择、执行分别记录。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "第一行：先维护实际结果，关注整体资源。",
+          "lineSpacingPercent": 130000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Droid Sans Fallback",
+            "color": "#333333",
+            "lineSpacing": 1.3
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第一行：先维护实际结果，关注整体资源。",
+              "fontSize": 24,
+              "typeface": "Droid Sans Fallback",
+              "color": "#333333",
+              "lineSpacing": 1.3
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "第二行：建议、选择、执行分别记录。",
+          "lineSpacingPercent": 130000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Droid Sans Fallback",
+            "color": "#333333",
+            "lineSpacing": 1.3
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第二行：建议、选择、执行分别记录。",
+              "fontSize": 24,
+              "typeface": "Droid Sans Fallback",
+              "color": "#333333",
+              "lineSpacing": 1.3
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/hkj6t8fa",
+      "id": "3",
+      "bbox": [
+        60,
+        360,
+        1160,
+        220
+      ],
+      "text": "阶段 | 必要产物\n定义问题 | 目标、期限与约束\n建立事实 | 证据账本与关键未知",
+      "textPreview": "阶段 | 必要产物 | 定义问题 | 目标、期限与约束 | 建立事实 | 证据账本与关键未知",
+      "rows": 3,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            60,
+            360,
+            300,
+            73.33
+          ],
+          "text": "阶段",
+          "textPreview": "阶段",
+          "fillColor": "#EEEEEE",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "阶段",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "阶段"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            360,
+            360,
+            860,
+            73.33
+          ],
+          "text": "必要产物",
+          "textPreview": "必要产物",
+          "fillColor": "#EEEEEE",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "必要产物",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "必要产物"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            60,
+            433.33,
+            300,
+            73.33
+          ],
+          "text": "定义问题",
+          "textPreview": "定义问题",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "定义问题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "定义问题"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            360,
+            433.33,
+            860,
+            73.33
+          ],
+          "text": "目标、期限与约束",
+          "textPreview": "目标、期限与约束",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "目标、期限与约束",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "目标、期限与约束"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            60,
+            506.67,
+            300,
+            73.33
+          ],
+          "text": "建立事实",
+          "textPreview": "建立事实",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "建立事实",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "建立事实"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            360,
+            506.67,
+            860,
+            73.33
+          ],
+          "text": "证据账本与关键未知",
+          "textPreview": "证据账本与关键未知",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "证据账本与关键未知",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "证据账本与关键未知"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

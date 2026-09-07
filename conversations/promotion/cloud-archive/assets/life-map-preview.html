@@ -1,0 +1,1605 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Life System Mindmap</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Life System Mindmap" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Life System Mindmap&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+:root:not([data-app-block-surface], [data-visualize-standalone]) &gt; body {
+  padding: 12px;
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* The shared runtime owns data-tooltip; suppress AppBlock&#x27;s pseudo-tooltip. */
+main [data-tooltip]::after {
+  content: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;life-map-v4&quot;&gt;
+  &lt;nav class=&quot;lm-crumbs&quot; aria-label=&quot;导图路径&quot;&gt;&lt;/nav&gt;
+  &lt;div class=&quot;lm-stage&quot; aria-label=&quot;人生管理系统思维导图&quot;&gt;
+    &lt;svg class=&quot;lm-edges&quot; aria-hidden=&quot;true&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;lm-nodes&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-small text-muted lm-legend&quot;&gt;连线表示组成关系 · 节点可逐层展开&lt;/div&gt;
+  &lt;div class=&quot;sr-only lm-announcement&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+#life-map-v4 { width:100%; color:var(--foreground); }
+#life-map-v4 .lm-crumbs { display:flex; flex-wrap:wrap; align-items:center; gap:4px; margin-bottom:12px; min-height:40px; }
+#life-map-v4 .lm-stage { position:relative; width:100%; }
+#life-map-v4 .lm-edges { position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; }
+#life-map-v4 .lm-edges path { fill:none; stroke:var(--border); stroke-width:1.5; }
+#life-map-v4 .lm-node { position:absolute; min-width:0; box-sizing:border-box; }
+#life-map-v4 .lm-node-head { display:flex; align-items:center; justify-content:flex-start; }
+#life-map-v4 .lm-node.center .lm-node-head { justify-content:center; }
+#life-map-v4 .lm-node.center { text-align:center; }
+#life-map-v4 .lm-node-title { font-weight:500; overflow-wrap:anywhere; }
+#life-map-v4 .lm-static { padding:10px 8px; }
+#life-map-v4 .lm-previews { padding:4px 0 2px 14px; margin-left:12px; display:grid; gap:7px; border-left:1px solid var(--border); }
+#life-map-v4 .lm-preview { position:relative; overflow-wrap:anywhere; }
+#life-map-v4 .lm-preview::before { position:absolute; content:&quot;&quot;; left:-14px; top:.7em; width:9px; border-top:1px solid var(--border); }
+#life-map-v4 .lm-subtitle { margin-top:9px; overflow-wrap:anywhere; }
+#life-map-v4 .lm-code { color:var(--muted-foreground); margin-right:5px; }
+#life-map-v4 .lm-legend { padding:14px 2px 2px; }
+&lt;/style&gt;
+&lt;script&gt;
+(() =&gt; {
+  const root = document.getElementById(&#x27;life-map-v4&#x27;);
+  const stage = root.querySelector(&#x27;.lm-stage&#x27;);
+  const edges = root.querySelector(&#x27;.lm-edges&#x27;);
+  const layer = root.querySelector(&#x27;.lm-nodes&#x27;);
+  const crumbs = root.querySelector(&#x27;.lm-crumbs&#x27;);
+  const status = root.querySelector(&#x27;.lm-announcement&#x27;);
+  const N = {};
+  const add = (id,label,children=[],preview=[],subtitle=&#x27;&#x27;) =&gt; { N[id]={id,label,children,preview,subtitle}; };
+  const leaf = (id,label,preview=[]) =&gt; add(id,label,[],preview);
+
+  add(&#x27;home&#x27;,&#x27;人生总控&#x27;,[&#x27;values&#x27;,&#x27;domains&#x27;,&#x27;evidence&#x27;,&#x27;engine&#x27;,&#x27;knowledge&#x27;,&#x27;action&#x27;],[],&#x27;协调时间、资金与承诺&#x27;);
+  add(&#x27;values&#x27;,&#x27;你决定：追求什么&#x27;,[&#x27;direction&#x27;,&#x27;priority&#x27;,&#x27;limits&#x27;,&#x27;permission&#x27;],[&#x27;人生方向与优先级&#x27;,&#x27;不可牺牲的底线&#x27;],&#x27;用户保留最终价值取舍&#x27;);
+  leaf(&#x27;direction&#x27;,&#x27;人生方向&#x27;,[&#x27;想过怎样的生活&#x27;,&#x27;近期目标服务长期方向&#x27;]);
+  leaf(&#x27;priority&#x27;,&#x27;价值与优先级&#x27;,[&#x27;收入、自由、关系、体验&#x27;,&#x27;冲突时由你作取舍&#x27;]);
+  leaf(&#x27;limits&#x27;,&#x27;不能突破的底线&#x27;,[&#x27;身体与生活基本条件&#x27;,&#x27;已有责任与资源上限&#x27;]);
+  leaf(&#x27;permission&#x27;,&#x27;授权范围&#x27;,[&#x27;哪些行动已经允许&#x27;,&#x27;何时停止或重新确认&#x27;]);
+
+  add(&#x27;domains&#x27;,&#x27;管理什么：9个领域&#x27;,[&#x27;D01&#x27;,&#x27;D02&#x27;,&#x27;D03&#x27;,&#x27;D04&#x27;,&#x27;D05&#x27;,&#x27;D06&#x27;,&#x27;D07&#x27;,&#x27;D08&#x27;,&#x27;D09&#x27;],[&#x27;健康 · 心理 · 关系&#x27;,&#x27;职业 · 学习 · 财务&#x27;,&#x27;日常 · 社群 · 体验&#x27;],&#x27;按生活结果划分&#x27;);
+  const domains = [
+    [&#x27;D01&#x27;,&#x27;身体健康与恢复&#x27;,[&#x27;身体功能&#x27;,&#x27;作息与恢复&#x27;,&#x27;照护安排&#x27;],[&#x27;M21&#x27;,&#x27;M03&#x27;]],
+    [&#x27;D02&#x27;,&#x27;心理状态与自我调节&#x27;,[&#x27;情绪体验&#x27;,&#x27;压力与应对&#x27;,&#x27;环境支持&#x27;],[&#x27;M10&#x27;,&#x27;M21&#x27;,&#x27;M23&#x27;]],
+    [&#x27;D03&#x27;,&#x27;关系、家庭与照护&#x27;,[&#x27;亲密关系与友谊&#x27;,&#x27;家庭承诺&#x27;,&#x27;照护与协商&#x27;],[&#x27;M17&#x27;,&#x27;M10&#x27;,&#x27;M20&#x27;]],
+    [&#x27;D04&#x27;,&#x27;职业、劳动与价值创造&#x27;,[&#x27;工作与创业&#x27;,&#x27;产品与实际交付&#x27;,&#x27;合作及职业路径&#x27;],[&#x27;M08&#x27;,&#x27;M11&#x27;,&#x27;M18&#x27;,&#x27;M17&#x27;]],
+    [&#x27;D05&#x27;,&#x27;学习、能力与探索&#x27;,[&#x27;理解与技能&#x27;,&#x27;练习和真实作品&#x27;,&#x27;独立解决问题&#x27;],[&#x27;M01&#x27;,&#x27;M02&#x27;,&#x27;M15&#x27;,&#x27;M16&#x27;,&#x27;M22&#x27;]],
+    [&#x27;D06&#x27;,&#x27;财务、资产与保障&#x27;,[&#x27;收支与现金流&#x27;,&#x27;支付能力&#x27;,&#x27;风险承受范围&#x27;],[&#x27;M19&#x27;,&#x27;M03&#x27;,&#x27;M20&#x27;]],
+    [&#x27;D07&#x27;,&#x27;居住、日常与基础设施&#x27;,[&#x27;居住与交通&#x27;,&#x27;家务与证照&#x27;,&#x27;数字工具&#x27;],[&#x27;M06&#x27;,&#x27;M15&#x27;,&#x27;M16&#x27;,&#x27;M18&#x27;]],
+    [&#x27;D08&#x27;,&#x27;社群、公共参与与生态责任&#x27;,[&#x27;公共参与&#x27;,&#x27;共同责任&#x27;,&#x27;社会及生态影响&#x27;],[&#x27;M11&#x27;,&#x27;M12&#x27;,&#x27;M23&#x27;]],
+    [&#x27;D09&#x27;,&#x27;休闲、审美与生命体验&#x27;,[&#x27;玩乐与自由时间&#x27;,&#x27;艺术与审美&#x27;,&#x27;体验本身的价值&#x27;],[&#x27;M23&#x27;,&#x27;M10&#x27;]]
+  ];
+  domains.forEach(([id,label,items,mods]) =&gt; {
+    leaf(id+&#x27;-focus&#x27;,&#x27;关注的生活结果&#x27;,items);
+    add(id+&#x27;-tools&#x27;,&#x27;按需调用能力&#x27;,mods,mods.map(x=&gt;x).slice(0,4));
+    leaf(id+&#x27;-shared&#x27;,&#x27;交给总控协调&#x27;,[&#x27;时间、费用与承诺&#x27;,&#x27;对其他领域的影响&#x27;]);
+    add(id,label,[id+&#x27;-focus&#x27;,id+&#x27;-tools&#x27;,id+&#x27;-shared&#x27;],items.slice(0,2),&#x27;各领域共享资源，相互影响&#x27;);
+  });
+
+  add(&#x27;evidence&#x27;,&#x27;依据什么：数据与证据&#x27;,[&#x27;sources&#x27;,&#x27;quality&#x27;,&#x27;state&#x27;,&#x27;ask&#x27;],[&#x27;已授权来源 + 用户补充&#x27;,&#x27;事实、假设、未知分开&#x27;],&#x27;先看清现状，再提出建议&#x27;);
+  add(&#x27;sources&#x27;,&#x27;数据从哪里来&#x27;,[&#x27;source-user&#x27;,&#x27;source-connect&#x27;,&#x27;source-public&#x27;],[&#x27;用户提供&#x27;,&#x27;授权接入&#x27;,&#x27;公开资料&#x27;]);
+  leaf(&#x27;source-user&#x27;,&#x27;用户主动提供&#x27;,[&#x27;文字、语音、文件&#x27;,&#x27;目标、感受与现实限制&#x27;]);
+  leaf(&#x27;source-connect&#x27;,&#x27;已有授权的数据源&#x27;,[&#x27;日历、任务与支出记录&#x27;,&#x27;接入能力需实际部署&#x27;]);
+  leaf(&#x27;source-public&#x27;,&#x27;公开信息&#x27;,[&#x27;原始资料与可靠来源&#x27;,&#x27;相关规则、环境和机会&#x27;]);
+  leaf(&#x27;quality&#x27;,&#x27;数据质量&#x27;,[&#x27;来源与时间&#x27;,&#x27;缺失、冲突与可信范围&#x27;]);
+  leaf(&#x27;state&#x27;,&#x27;个人状态记录&#x27;,[&#x27;事实 ≠ 指标 ≠ 推测&#x27;,&#x27;保留历史版本与未知&#x27;]);
+  leaf(&#x27;ask&#x27;,&#x27;主动补问&#x27;,[&#x27;只问可能改变选择的信息&#x27;,&#x27;已有资料先复用&#x27;,&#x27;问题合并，控制打扰&#x27;]);
+
+  add(&#x27;engine&#x27;,&#x27;怎样决策：8个阶段&#x27;,[&#x27;S1&#x27;,&#x27;S2&#x27;,&#x27;S3&#x27;,&#x27;S4&#x27;,&#x27;S5&#x27;,&#x27;S6&#x27;,&#x27;S7&#x27;,&#x27;S8&#x27;],[&#x27;定义 → 事实 → 方案 → 比较&#x27;,&#x27;复核 → 取舍 → 执行 → 更新&#x27;],&#x27;阶段有顺序，也允许回退&#x27;);
+  const stages = [
+    [&#x27;S1&#x27;,&#x27;定义问题&#x27;,[&#x27;目标、期限、资源&#x27;,&#x27;不能突破的边界&#x27;],[&#x27;M01&#x27;,&#x27;M05&#x27;,&#x27;M10&#x27;,&#x27;M14&#x27;,&#x27;M23&#x27;]],
+    [&#x27;S2&#x27;,&#x27;建立事实&#x27;,[&#x27;核实来源与实际情况&#x27;,&#x27;分清事实、假设与未知&#x27;],[&#x27;M01&#x27;,&#x27;M03&#x27;,&#x27;M12&#x27;,&#x27;M13&#x27;,&#x27;M15&#x27;,&#x27;M22&#x27;]],
+    [&#x27;S3&#x27;,&#x27;生成方案&#x27;,[&#x27;行动、维持现状、暂缓&#x27;,&#x27;小规模试行与分阶段方案&#x27;],[&#x27;M05&#x27;,&#x27;M07&#x27;,&#x27;M08&#x27;,&#x27;M09&#x27;,&#x27;M11&#x27;,&#x27;M14&#x27;]],
+    [&#x27;S4&#x27;,&#x27;约束与比较&#x27;,[&#x27;先查整个组合能否可行&#x27;,&#x27;再比成本、风险与取舍&#x27;],[&#x27;M02&#x27;,&#x27;M03&#x27;,&#x27;M05&#x27;,&#x27;M06&#x27;,&#x27;M07&#x27;,&#x27;M19&#x27;,&#x27;M20&#x27;,&#x27;M21&#x27;]],
+    [&#x27;S5&#x27;,&#x27;反驳与复核&#x27;,[&#x27;找反例、复算关键数字&#x27;,&#x27;证据不足则返回补证&#x27;],[&#x27;M01&#x27;,&#x27;M03&#x27;,&#x27;M04&#x27;,&#x27;M10&#x27;,&#x27;M14&#x27;]],
+    [&#x27;S6&#x27;,&#x27;建议与取舍&#x27;,[&#x27;说明建议成立的条件&#x27;,&#x27;记录用户的真实选择&#x27;],[&#x27;M05&#x27;,&#x27;M10&#x27;,&#x27;M17&#x27;,&#x27;M23&#x27;]],
+    [&#x27;S7&#x27;,&#x27;授权执行&#x27;,[&#x27;安排任务、资源与期限&#x27;,&#x27;明确验收和停止条件&#x27;],[&#x27;M06&#x27;,&#x27;M11&#x27;,&#x27;M15&#x27;,&#x27;M16&#x27;,&#x27;M17&#x27;,&#x27;M18&#x27;]],
+    [&#x27;S8&#x27;,&#x27;反馈更新&#x27;,[&#x27;对照预期与实际结果&#x27;,&#x27;回到最早受影响阶段&#x27;],[&#x27;M03&#x27;,&#x27;M04&#x27;,&#x27;M13&#x27;,&#x27;M14&#x27;,&#x27;M15&#x27;,&#x27;M18&#x27;]]
+  ];
+  stages.forEach(([id,label,items,mods],i) =&gt; {
+    leaf(id+&#x27;-task&#x27;,&#x27;这一阶段做什么&#x27;,items);
+    add(id+&#x27;-tools&#x27;,&#x27;这一阶段调用什么&#x27;,mods,[]);
+    const next=i&lt;7?&#x27;S&#x27;+(i+2):&#x27;S1&#x27;;
+    leaf(id+&#x27;-gate&#x27;,&#x27;如何推进或回退&#x27;,i===3?[&#x27;硬约束不通过 → 改方案&#x27;,&#x27;可行方案 → 复核&#x27;]:i===4?[&#x27;复核不通过 → 补证或重比&#x27;,&#x27;通过 → 给出条件建议&#x27;]:i===7?[&#x27;目标改变 → S1&#x27;,&#x27;事实改变 → S2&#x27;,&#x27;方案改变 → S3&#x27;]:[&#x27;条件具备 → &#x27;+next,&#x27;信息不足 → 补证或回退&#x27;]);
+    add(id,label,[id+&#x27;-task&#x27;,id+&#x27;-tools&#x27;,id+&#x27;-gate&#x27;],items,&#x27;第&#x27;+(i+1)+&#x27;阶段 / 共8阶段&#x27;);
+  });
+
+  add(&#x27;knowledge&#x27;,&#x27;调用什么：23个能力&#x27;,[&#x27;methods&#x27;,&#x27;fields&#x27;,&#x27;tools&#x27;],[&#x27;决策方法：8个&#x27;,&#x27;领域知识与价值：10个&#x27;,&#x27;信息与执行：5个&#x27;],&#x27;按任务调用，可跨领域、跨阶段&#x27;);
+  add(&#x27;methods&#x27;,&#x27;决策方法 · 8个&#x27;,[&#x27;M01&#x27;,&#x27;M03&#x27;,&#x27;M04&#x27;,&#x27;M05&#x27;,&#x27;M06&#x27;,&#x27;M07&#x27;,&#x27;M13&#x27;,&#x27;M14&#x27;],[&#x27;判断、比较与检验&#x27;],&#x27;帮助形成和修正选择&#x27;);
+  add(&#x27;fields&#x27;,&#x27;知识与价值 · 10个&#x27;,[&#x27;M02&#x27;,&#x27;M08&#x27;,&#x27;M09&#x27;,&#x27;M10&#x27;,&#x27;M11&#x27;,&#x27;M12&#x27;,&#x27;M19&#x27;,&#x27;M20&#x27;,&#x27;M21&#x27;,&#x27;M23&#x27;],[&#x27;理解现实与价值边界&#x27;],&#x27;提供内容、背景和限制&#x27;);
+  add(&#x27;tools&#x27;,&#x27;信息与执行 · 5个&#x27;,[&#x27;M15&#x27;,&#x27;M16&#x27;,&#x27;M17&#x27;,&#x27;M18&#x27;,&#x27;M22&#x27;],[&#x27;获取资料、完成行动&#x27;],&#x27;把分析落实到具体工作&#x27;);
+  const modules = [
+    [&#x27;M01&#x27;,&#x27;逻辑、认识论与科学方法&#x27;,[&#x27;前提与推理&#x27;,&#x27;科学证据与反例&#x27;],[&#x27;检查说法是否有依据&#x27;,&#x27;交付：证据与反驳清单&#x27;]],
+    [&#x27;M02&#x27;,&#x27;基础数学&#x27;,[&#x27;数量关系与公式&#x27;,&#x27;函数、矩阵与变化&#x27;],[&#x27;把资源和关系写清&#x27;,&#x27;交付：可复算模型&#x27;]],
+    [&#x27;M03&#x27;,&#x27;概率论与统计学&#x27;,[&#x27;概率与不确定性&#x27;,&#x27;抽样、估计与检验&#x27;],[&#x27;判断数据支持到哪里&#x27;,&#x27;交付：区间与不确定性&#x27;]],
+    [&#x27;M04&#x27;,&#x27;因果推断与实验设计&#x27;,[&#x27;因果关系与混杂&#x27;,&#x27;对照和实验设计&#x27;],[&#x27;检验行动是否有效&#x27;,&#x27;交付：试验与评价方案&#x27;]],
+    [&#x27;M05&#x27;,&#x27;决策理论&#x27;,[&#x27;收益、成本与可逆性&#x27;,&#x27;多目标取舍与信息价值&#x27;],[&#x27;比较真正可选的方案&#x27;,&#x27;交付：条件建议&#x27;]],
+    [&#x27;M06&#x27;,&#x27;运筹学&#x27;,[&#x27;约束与资源分配&#x27;,&#x27;调度和优化&#x27;],[&#x27;安排时间、预算和任务&#x27;,&#x27;交付：可行安排&#x27;]],
+    [&#x27;M07&#x27;,&#x27;博弈论&#x27;,[&#x27;利益、策略与回应&#x27;,&#x27;合作和激励&#x27;],[&#x27;考虑他人的自主选择&#x27;,&#x27;交付：合作与谈判方案&#x27;]],
+    [&#x27;M08&#x27;,&#x27;微观经济学与宏观经济学&#x27;,[&#x27;需求、成本与激励&#x27;,&#x27;就业、周期与外部环境&#x27;],[&#x27;分析经济条件&#x27;,&#x27;交付：成本与需求依据&#x27;]],
+    [&#x27;M09&#x27;,&#x27;马克思主义政治经济学&#x27;,[&#x27;生产、劳动与资源控制&#x27;,&#x27;利益结构与分配&#x27;],[&#x27;分析结构性条件&#x27;,&#x27;交付：生产分配关系图&#x27;]],
+    [&#x27;M10&#x27;,&#x27;心理学与行为科学&#x27;,[&#x27;认知偏差与动机&#x27;,&#x27;情绪、习惯与环境&#x27;],[&#x27;理解判断和行动阻力&#x27;,&#x27;交付：行为试行方案&#x27;]],
+    [&#x27;M11&#x27;,&#x27;社会学、政治学、制度与组织&#x27;,[&#x27;规则、权力与组织&#x27;,&#x27;角色、协作与制度&#x27;],[&#x27;定位现实的权限和阻碍&#x27;,&#x27;交付：角色与流程分析&#x27;]],
+    [&#x27;M12&#x27;,&#x27;历史与思想史&#x27;,[&#x27;历史背景与路径依赖&#x27;,&#x27;史料、类比与差异&#x27;],[&#x27;理解事情如何形成&#x27;,&#x27;交付：背景与适用边界&#x27;]],
+    [&#x27;M13&#x27;,&#x27;毛泽东思想中的调查与实践方法&#x27;,[&#x27;调查研究与实践检验&#x27;,&#x27;矛盾分析与阶段重点&#x27;],[&#x27;了解具体条件再行动&#x27;,&#x27;交付：调查与试行记录&#x27;]],
+    [&#x27;M14&#x27;,&#x27;系统科学、控制论与钱学森系统工程&#x27;,[&#x27;整体、层次与接口&#x27;,&#x27;反馈、延迟与测量&#x27;],[&#x27;检查跨域影响与调整&#x27;,&#x27;交付：系统及反馈模型&#x27;]],
+    [&#x27;M15&#x27;,&#x27;计算机、数据处理与信息安全&#x27;,[&#x27;数据整理、编程与可视化&#x27;,&#x27;权限、备份与可复现&#x27;],[&#x27;把资料变成可核对结果&#x27;,&#x27;交付：数据与工具&#x27;]],
+    [&#x27;M16&#x27;,&#x27;机器学习、大模型与自动化&#x27;,[&#x27;AI推理与工具流程&#x27;,&#x27;效果评价与错误处理&#x27;],[&#x27;让合适的任务自动完成&#x27;,&#x27;交付：已验证的工作流&#x27;]],
+    [&#x27;M17&#x27;,&#x27;语言表达、沟通与谈判&#x27;,[&#x27;表达、倾听与理解&#x27;,&#x27;协商、冲突与约定&#x27;],[&#x27;让各方理解并达成约定&#x27;,&#x27;交付：沟通与谈判方案&#x27;]],
+    [&#x27;M18&#x27;,&#x27;管理与执行&#x27;,[&#x27;项目拆解与任务依赖&#x27;,&#x27;验收、复盘与协作&#x27;],[&#x27;把选择变成实际交付&#x27;,&#x27;交付：行动计划与记录&#x27;]],
+    [&#x27;M19&#x27;,&#x27;个人财务&#x27;,[&#x27;收支、资产与负债&#x27;,&#x27;流动性与保障&#x27;],[&#x27;核实资金能否承受&#x27;,&#x27;交付：现金流与风险边界&#x27;]],
+    [&#x27;M20&#x27;,&#x27;法律基础&#x27;,[&#x27;权利、义务与合同&#x27;,&#x27;程序、责任与证据&#x27;],[&#x27;识别适用规则和限制&#x27;,&#x27;交付：待核实的法律问题&#x27;]],
+    [&#x27;M21&#x27;,&#x27;健康基础&#x27;,[&#x27;身体功能与恢复&#x27;,&#x27;健康信息和照护&#x27;],[&#x27;检查负荷与健康边界&#x27;,&#x27;交付：需核实的健康条件&#x27;]],
+    [&#x27;M22&#x27;,&#x27;英语与原始资料检索&#x27;,[&#x27;英语理解与检索&#x27;,&#x27;原始来源和交叉核验&#x27;],[&#x27;获取所需一手资料&#x27;,&#x27;交付：可追溯资料&#x27;]],
+    [&#x27;M23&#x27;,&#x27;文学、艺术、音乐、美学与伦理&#x27;,[&#x27;审美、意义与体验&#x27;,&#x27;伦理、价值与冲突&#x27;],[&#x27;帮助理解什么值得追求&#x27;,&#x27;交付：价值与体验选项&#x27;]]
+  ];
+  modules.forEach(([id,label,study,work])=&gt;{
+    leaf(id+&#x27;-study&#x27;,&#x27;包含的知识&#x27;,study);
+    leaf(id+&#x27;-work&#x27;,&#x27;怎样帮助决策&#x27;,work);
+    add(id,label,[id+&#x27;-study&#x27;,id+&#x27;-work&#x27;],[study[0]],&#x27;共享能力模块 · 按需参与&#x27;);
+  });
+
+  add(&#x27;action&#x27;,&#x27;怎样行动与反馈&#x27;,[&#x27;dispatch&#x27;,&#x27;resources&#x27;,&#x27;three-states&#x27;,&#x27;feedback&#x27;,&#x27;proactive&#x27;],[&#x27;派工 → 行动 → 观察&#x27;,&#x27;结果反馈到总控&#x27;],&#x27;建议、选择和执行分别记录&#x27;);
+  leaf(&#x27;dispatch&#x27;,&#x27;派工与交付&#x27;,[&#x27;独立任务并行；依赖任务顺序&#x27;,&#x27;按交付物验收&#x27;,&#x27;重要建议安排复核&#x27;]);
+  leaf(&#x27;resources&#x27;,&#x27;共同资源核算&#x27;,[&#x27;时间、资金、承诺统一检查&#x27;,&#x27;同一行动只记账一次&#x27;,&#x27;局部改善要检查整体影响&#x27;]);
+  add(&#x27;three-states&#x27;,&#x27;分开记录3种状态&#x27;,[&#x27;advice-state&#x27;,&#x27;choice-state&#x27;,&#x27;execution-state&#x27;],[&#x27;建议依据&#x27;,&#x27;用户选择&#x27;,&#x27;实际执行&#x27;]);
+  leaf(&#x27;advice-state&#x27;,&#x27;建议是否成立&#x27;,[&#x27;待补证 / 条件建议&#x27;,&#x27;建议可供选择&#x27;]);
+  leaf(&#x27;choice-state&#x27;,&#x27;用户是否选择&#x27;,[&#x27;未知 / 未决定&#x27;,&#x27;已决定 / 暂缓&#x27;]);
+  leaf(&#x27;execution-state&#x27;,&#x27;行动是否发生&#x27;,[&#x27;未知 / 未开始 / 执行中&#x27;,&#x27;已暂停 / 已完成 / 已停止&#x27;]);
+  leaf(&#x27;feedback&#x27;,&#x27;反馈回到总控&#x27;,[&#x27;对照预测与真实结果&#x27;,&#x27;考虑测量误差和效果延迟&#x27;,&#x27;条件改变 → 重新评估&#x27;]);
+  leaf(&#x27;proactive&#x27;,&#x27;主动服务设计&#x27;,[&#x27;授权取数 → 必要补问&#x27;,&#x27;识别变化 → 提出建议&#x27;,&#x27;后台采集与提醒仍需部署&#x27;]);
+  add(&#x27;controller&#x27;,&#x27;总控具体做什么&#x27;,[&#x27;control-goals&#x27;,&#x27;control-state&#x27;,&#x27;control-impact&#x27;,&#x27;resources&#x27;,&#x27;control-decision&#x27;,&#x27;dispatch&#x27;,&#x27;feedback&#x27;,&#x27;control-history&#x27;],[],&#x27;跨领域协调，不替你决定人生价值&#x27;);
+  leaf(&#x27;control-goals&#x27;,&#x27;维护目标与底线&#x27;,[&#x27;把新任务放回人生方向&#x27;,&#x27;检查是否触碰不可接受边界&#x27;]);
+  leaf(&#x27;control-state&#x27;,&#x27;判断当前状态&#x27;,[&#x27;汇总各领域证据&#x27;,&#x27;事实与推测分开&#x27;]);
+  leaf(&#x27;control-impact&#x27;,&#x27;检查跨领域影响&#x27;,[&#x27;职业计划会否挤压恢复&#x27;,&#x27;资源与承诺是否互相冲突&#x27;]);
+  leaf(&#x27;control-decision&#x27;,&#x27;组织具体决策&#x27;,[&#x27;调用8阶段引擎&#x27;,&#x27;选择需要的知识模块&#x27;]);
+  leaf(&#x27;control-history&#x27;,&#x27;保存证据与版本&#x27;,[&#x27;保留依据、选择和执行记录&#x27;,&#x27;条件变化后重核旧结论&#x27;]);
+
+  let route=[&#x27;home&#x27;];
+  let resizeTimer;
+  const shortId = id =&gt; /^[DM]\d\d$/.test(id) || /^S\d$/.test(id) ? id : &#x27;&#x27;;
+  function go(id){ route.push(id); render(true); }
+  function createNode(node,center=false){
+    const wrap=document.createElement(&#x27;div&#x27;);wrap.className=&#x27;lm-node&#x27;+(center?&#x27; center&#x27;:&#x27;&#x27;);wrap.dataset.id=node.id;
+    const head=document.createElement(&#x27;div&#x27;);head.className=&#x27;lm-node-head&#x27;;wrap.appendChild(head);
+    const target=center?(node.id===&#x27;home&#x27;?&#x27;controller&#x27;:null):(node.children.length?node.id:null);
+    const el=document.createElement(target?&#x27;button&#x27;:&#x27;div&#x27;);
+    if(target){el.type=&#x27;button&#x27;;el.className=&#x27;btn &#x27;+(center?&#x27;btn-primary&#x27;:&#x27;viz-tile&#x27;);el.addEventListener(&#x27;click&#x27;,()=&gt;go(target));el.setAttribute(&#x27;aria-label&#x27;,node.label+&#x27;，展开&#x27;);}
+    else el.className=&#x27;lm-static&#x27;;
+    const title=document.createElement(&#x27;span&#x27;);title.className=&#x27;lm-node-title&#x27;;
+    if(shortId(node.id)){const code=document.createElement(&#x27;span&#x27;);code.className=&#x27;lm-code&#x27;;code.textContent=shortId(node.id);title.appendChild(code);}
+    title.appendChild(document.createTextNode(node.label+(target&amp;&amp;!center?&#x27; ›&#x27;:&#x27;&#x27;)));el.appendChild(title);head.appendChild(el);
+    if(center&amp;&amp;node.subtitle){const sub=document.createElement(&#x27;div&#x27;);sub.className=&#x27;lm-subtitle text-small text-muted&#x27;;sub.textContent=node.subtitle;wrap.appendChild(sub);}
+    if(!center&amp;&amp;node.preview.length){const previews=document.createElement(&#x27;div&#x27;);previews.className=&#x27;lm-previews text-small&#x27;;node.preview.forEach(p=&gt;{const line=document.createElement(&#x27;div&#x27;);line.className=&#x27;lm-preview&#x27;;line.textContent=p;previews.appendChild(line);});wrap.appendChild(previews);}
+    layer.appendChild(wrap);return wrap;
+  }
+  function path(d){const p=document.createElementNS(&#x27;http://www.w3.org/2000/svg&#x27;,&#x27;path&#x27;);p.setAttribute(&#x27;d&#x27;,d);edges.appendChild(p);}
+  function headMid(el){return el.offsetTop+el.querySelector(&#x27;.lm-node-head&#x27;).offsetHeight/2;}
+  function render(announce=false){
+    const id=route.at(-1),node=N[id];
+    crumbs.replaceChildren();
+    route.forEach((rid,i)=&gt;{if(i){const sep=document.createElement(&#x27;span&#x27;);sep.className=&#x27;text-muted&#x27;;sep.textContent=&#x27;›&#x27;;crumbs.appendChild(sep);}const label=rid===&#x27;home&#x27;?&#x27;系统全景&#x27;:N[rid].label;
+      if(i&lt;route.length-1){const b=document.createElement(&#x27;button&#x27;);b.type=&#x27;button&#x27;;b.className=&#x27;btn btn-ghost&#x27;;b.textContent=label;b.onclick=()=&gt;{route=route.slice(0,i+1);render(true);};crumbs.appendChild(b);}
+      else {const span=document.createElement(&#x27;span&#x27;);span.textContent=label;span.setAttribute(&#x27;aria-current&#x27;,&#x27;page&#x27;);crumbs.appendChild(span);}
+    });
+    layer.replaceChildren();edges.replaceChildren();
+    const w=stage.getBoundingClientRect().width;
+    const center=createNode(node,true);
+    const children=node.children.map(cid=&gt;createNode(N[cid]));
+    const mobile=w&lt;620;
+    if(mobile){
+      center.style.width=(w-36)+&#x27;px&#x27;;center.style.left=&#x27;18px&#x27;;center.style.top=&#x27;0px&#x27;;
+      let y=center.offsetHeight+30;
+      children.forEach(el=&gt;{el.style.width=(w-62)+&#x27;px&#x27;;el.style.left=&#x27;48px&#x27;;el.style.top=y+&#x27;px&#x27;;y+=el.offsetHeight+23;});
+      const h=Math.max(y-10,center.offsetHeight+15);stage.style.height=h+&#x27;px&#x27;;edges.setAttribute(&#x27;viewBox&#x27;,`0 0 ${w} ${h}`);
+      const start=center.offsetTop+center.offsetHeight;
+      if(children.length){const last=headMid(children.at(-1));path(`M ${w/2} ${start} V ${start+14} H 27 V ${last}`);children.forEach(el=&gt;path(`M 27 ${headMid(el)} H 48`));}
+    } else {
+      const sideW=Math.min(220,(w-202)/2),centerW=156;
+      const split=Math.ceil(children.length/2),left=children.slice(0,split),right=children.slice(split);
+      for(const el of children)el.style.width=sideW+&#x27;px&#x27;;center.style.width=centerW+&#x27;px&#x27;;
+      const heights=arr=&gt;arr.reduce((sum,e)=&gt;sum+e.offsetHeight,0)+Math.max(0,arr.length-1)*34;
+      const h=Math.max(heights(left),heights(right),center.offsetHeight+80)+20;
+      center.style.left=((w-centerW)/2)+&#x27;px&#x27;;center.style.top=((h-center.offsetHeight)/2)+&#x27;px&#x27;;
+      const place=(arr,x)=&gt;{let y=(h-heights(arr))/2;arr.forEach(el=&gt;{el.style.left=x+&#x27;px&#x27;;el.style.top=y+&#x27;px&#x27;;y+=el.offsetHeight+34;});};place(left,0);place(right,w-sideW);
+      stage.style.height=h+&#x27;px&#x27;;edges.setAttribute(&#x27;viewBox&#x27;,`0 0 ${w} ${h}`);
+      const cy=headMid(center),cx=(w-centerW)/2;
+      left.forEach(el=&gt;{const y=headMid(el);path(`M ${cx} ${cy} C ${cx-30} ${cy}, ${sideW+28} ${y}, ${sideW} ${y}`);});
+      right.forEach(el=&gt;{const y=headMid(el);path(`M ${cx+centerW} ${cy} C ${cx+centerW+30} ${cy}, ${w-sideW-28} ${y}, ${w-sideW} ${y}`);});
+    }
+    if(announce)status.textContent=&#x27;已展开&#x27;+node.label+&#x27;，&#x27;+node.children.length+&#x27;个分支。&#x27;;
+  }
+  const observer=new ResizeObserver(()=&gt;{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=&gt;render(),40);});observer.observe(stage);
+  render();
+})();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerdown&quot;, handlePointer);
+    document.removeEventListener(&quot;pointercancel&quot;, handlePointer);
+    document.removeEventListener(&quot;click&quot;, handleTouchClick);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerdown&quot;, handlePointer);
+  document.addEventListener(&quot;pointercancel&quot;, handlePointer);
+  document.addEventListener(&quot;click&quot;, handleTouchClick);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>

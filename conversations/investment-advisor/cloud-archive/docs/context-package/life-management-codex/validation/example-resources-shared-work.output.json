@@ -1,0 +1,29 @@
+{
+  "snapshot_id": "demo-shared-action",
+  "revision": 1,
+  "input_fingerprint": "59164f4d8e6146b3a3bb27cdd34848641c78ab67f7dccb0ef944aef6fef6f0e1",
+  "period": {
+    "id": "2026-W37",
+    "description": "示例：一份作品同时服务学习和职业展示，时间只计一次",
+    "timezone": "Asia/Shanghai"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "shared_piece_once",
+      "status": "资源可行",
+      "resources": [
+        {
+          "resource_id": "time",
+          "unit": "分钟",
+          "status": "资源可行",
+          "capacity": "480",
+          "known_minimum_demand": "480",
+          "total_demand": "480",
+          "remaining": "0",
+          "unknown_fields_or_actions": []
+        }
+      ]
+    }
+  ],
+  "scope": "仅核算声明的单周期资源；不是建议通过、授权、事实核实、日历排程或实际执行。"
+}

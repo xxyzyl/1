@@ -1,0 +1,61 @@
+{
+  "snapshot_id": "demo-career-transition",
+  "revision": 1,
+  "input_fingerprint": "98c65a66ad2f56eb0055589499347e0277638574987c727336c0dd46bda6b86c",
+  "period": {
+    "id": "2026-W37",
+    "description": "示例：每周业余时间预算，覆盖家庭承诺、副业接单、学习和机动预留",
+    "timezone": "Asia/Shanghai"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "all_together",
+      "status": "资源冲突",
+      "resources": [
+        {
+          "resource_id": "time",
+          "unit": "分钟",
+          "status": "资源冲突",
+          "capacity": "600",
+          "known_minimum_demand": "720",
+          "total_demand": "720",
+          "remaining": "-120",
+          "unknown_fields_or_actions": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "project_only",
+      "status": "资源可行",
+      "resources": [
+        {
+          "resource_id": "time",
+          "unit": "分钟",
+          "status": "资源可行",
+          "capacity": "600",
+          "known_minimum_demand": "480",
+          "total_demand": "480",
+          "remaining": "120",
+          "unknown_fields_or_actions": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "learning_only",
+      "status": "资源可行",
+      "resources": [
+        {
+          "resource_id": "time",
+          "unit": "分钟",
+          "status": "资源可行",
+          "capacity": "600",
+          "known_minimum_demand": "420",
+          "total_demand": "420",
+          "remaining": "180",
+          "unknown_fields_or_actions": []
+        }
+      ]
+    }
+  ],
+  "scope": "仅核算声明的单周期资源；不是建议通过、授权、事实核实、日历排程或实际执行。"
+}

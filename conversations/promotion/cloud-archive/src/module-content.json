@@ -1,0 +1,578 @@
+[
+  {
+    "code": "M01",
+    "name": "逻辑、认识论与科学方法",
+    "claim": "把说法拆成可核对的前提与证据，找出什么会推翻结论。",
+    "knowledge": [
+      "命题、论证、必要与充分条件",
+      "归纳、演绎、反例与逻辑谬误",
+      "相关因果、证据与可证伪性",
+      "观察、选择和测量偏差"
+    ],
+    "input": "具体主张、原始材料、来源日期、支持和反对理由。",
+    "method": "分清事实与假设；检查推理；寻找反例和替代解释；标出关键未知。",
+    "output": "主张—前提—证据表、反对理由、补证清单。",
+    "stages": "贯穿S1—S8；重点S2事实、S5复核。",
+    "example": "合成示例：三位转行者加薪，只能提示可能机会，仍需调查未成功者与进入条件。",
+    "boundary": "推理成立不代表前提真实；能复述方法不等于完成验证。",
+    "notes": "本模块先问：我们究竟在判断哪一句话？把“这个方向很好”拆成对谁、在什么时间、用什么标准算好，才能寻找证据。复核时不只检查支持材料，还要找最强反例，并写清会改变判断的观察。页中三位转行者是合成案例，不是对真实市场的调查。验收应看证据对应和未知处理，而不是是否说出了逻辑术语。日常小事可压缩，重要判断则保留可追溯记录。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M01-逻辑与科学方法.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M02",
+    "name": "基础数学",
+    "claim": "把数量关系写清楚，让计算能够复算并接受边界检查。",
+    "knowledge": [
+      "代数、方程与不等式",
+      "函数、指数与对数",
+      "集合、向量与矩阵",
+      "微积分：变化率、边际量与累积"
+    ],
+    "input": "变量、单位、时间尺度、数据来源、取值范围与待求量。",
+    "method": "建立最简单的关系式；实际计算；检查量纲、极端情况、量级与舍入。",
+    "output": "变量单位表、公式、可复算结果及适用边界。",
+    "stages": "常用S2事实、S4比较、S8反馈；按需跨用。",
+    "example": "合成示例：每周投入4小时、持续6周，计划量为24小时；这不是已完成学习量。",
+    "boundary": "算得对不能弥补模型设错；不把不确定输入包装成精确答案。",
+    "notes": "数学的首要价值是避免口径混乱。例如增长百分比与百分点不同，平均投入与新增一小时的收益也不同。先定义变量再计算，比立即套公式更可靠。复杂模型只有在现实关系和参数有依据时才有意义。本页算式只是合成计划中的乘法，不证明学习效果，更不是用户承诺。基础数学在引擎中主要归入知识资源，也随时支持统计、优化和反馈分析。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M02-基础数学.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M03",
+    "name": "概率论与统计学",
+    "claim": "说明数据覆盖了谁、差异有多大，以及判断还有多大不确定性。",
+    "knowledge": [
+      "条件概率、贝叶斯、期望与方差",
+      "分布、大数定律与中心极限定理",
+      "抽样、区间、检验与回归",
+      "数据质量、假设与留出验证"
+    ],
+    "input": "总体样本、采样过程、数据字典、缺失异常、时间结构和基准率。",
+    "method": "先查样本偏差；看分布；选择估计方法；报告效应与区间；检验敏感性。",
+    "output": "样本范围、质量摘要、计算、区间与验证结果。",
+    "stages": "常用S2、S4、S5、S8；按需跨用。",
+    "example": "合成示例：群内20人填问卷，只能描述这批回应者，不能直接代表所有求职者。",
+    "boundary": "显著不等于重要；大样本不自动消除偏差；回归不单独证明因果。",
+    "notes": "开始统计前，应先追问数据怎样进入样本。选择偏差不会因公式更复杂而消失。结果应同时说明差异大小、不确定性和适用人群；没有显著差异也不等于效果不存在。若做预测，还要保留未参与设计的数据，并与简单基线比较。合成问卷例子突出样本边界，不提供任何真实调查结论。验收是可复算的分析及假设检查，不是只展示一个百分比或显著性符号。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M03-概率与统计.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M04",
+    "name": "因果推断与实验设计",
+    "claim": "判断某项行动是否带来变化，并尽量排除同时发生的其他解释。",
+    "knowledge": [
+      "反事实、混杂与反向因果",
+      "随机分配、对照与测量",
+      "因果图、准实验与识别假设",
+      "效应、时间范围与适用人群"
+    ],
+    "input": "对象、干预、比较条件、结果指标、周期、混杂因素与实施限制。",
+    "method": "写清因果问题；设计对照；预定指标和分析；检查执行偏差与替代解释。",
+    "output": "设计与假设表、指标、效应估计或无法识别说明。",
+    "stages": "常用S2—S4、S7—S8；按需跨用。",
+    "example": "合成示例：换学习法后测验提高，仍要检查题目难度和额外练习是否同时变化。",
+    "boundary": "一次前后变化不证明因果；个人试验不能直接推广到所有人。",
+    "notes": "因果问题应写成：对哪些人，实施什么，与什么比较，在多久内改变什么。实验不是随意尝试，主要指标与观察期最好事先确定。不能随机分配时，需要说明观察研究依赖的假设及无法排除的混杂。合成学习例子只展示需要排查的解释，并未做实验。个人低风险试行可以帮助学习，但仍可能受到时间趋势和熟练效应影响；证据不足时保留关联表述。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M04-因果推断与实验.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M05",
+    "name": "决策理论",
+    "claim": "在真实目标和硬约束下比较可行选项，说明何时应该改选。",
+    "knowledge": [
+      "期望效用、风险厌恶与决策树",
+      "信息价值、机会成本与可逆性",
+      "多准则比较与敏感性分析",
+      "未来选择、最坏后果与后悔"
+    ],
+    "input": "用户目标、真实选项、硬约束、风险边界、证据与未定偏好。",
+    "method": "先筛约束；比较情景、成本和可逆性；有依据才估概率；检验反转条件。",
+    "output": "选项表、条件建议、反对理由、下一步与复盘点。",
+    "stages": "贯穿S1—S8；重点S1、S3、S4、S6。",
+    "example": "合成示例：全职学习超出现金边界时，比较在职试学、延后和其他可行路径。",
+    "boundary": "高评分不能抵消硬约束；主观权重与虚构成功率都不是事实。",
+    "notes": "本模块的任务是把选择展开，而不是替用户决定人生目标。真实备选应有进入条件、资源需求和退出方式，必要时包括暂缓及小规模试行。概率没有依据，就用情景和反转条件，不为了完成表格填一个成功率。合成案例没有规定用户必须保留多少现金，仅说明硬约束优先于收益评分。最后还要区分证据支持的建议、用户实际选择，以及是否开始执行。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M05-决策理论.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M06",
+    "name": "运筹学",
+    "claim": "把争夺时间和预算的任务放在一起，寻找可执行的分配与调度。",
+    "knowledge": [
+      "线性与整数规划",
+      "资源配置、调度与网络流",
+      "排队与容量",
+      "多目标、可行解与启发式方案"
+    ],
+    "input": "资源总量、任务依赖、耗时成本范围、期限、容量和硬约束。",
+    "method": "定义变量和约束；先查可行性；求解或安排；对超时、减员和资源减少作检查。",
+    "output": "资源表、时间安排、求解状态、未满足需求和缓冲。",
+    "stages": "常用S1、S3、S4、S7、S8；按需跨用。",
+    "example": "合成示例：周末可用6小时，两项任务各需4小时，原组合不可行，需延期或缩减。",
+    "boundary": "纸面最优可能忽略疲劳、切换和突发；未求解不能声称最优。",
+    "notes": "资源分配先判断有没有可行安排，再谈优劣。时间相加不够，还应检查任务依赖、真实可用时段和恢复需求。若只是按经验排列任务，应明确它是启发式安排；只有满足模型条件并实际求解，才能准确说明求解状态。合成周末例子只证明总时长冲突，不能代替日历排程。跨领域行动由总控统一核算，避免学习、工作和健康各自重复占用同一段时间。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M06-运筹与资源配置.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M07",
+    "name": "博弈论",
+    "claim": "把他人的可能回应纳入方案，设计能核验、能履行的合作条件。",
+    "knowledge": [
+      "策略、收益与最佳反应",
+      "纳什均衡与重复博弈",
+      "信息不对称、信号与承诺",
+      "激励相容、合作与违约诱因"
+    ],
+    "input": "参与者、可选行动、已知利益、信息分布、顺序和已有约定。",
+    "method": "分清利益事实与动机猜测；推演合理回应；检查承诺；比较合作和破裂备选。",
+    "output": "利益信息表、回应情景、合作条件和谈判备选。",
+    "stages": "常用S2—S4、S6—S7；按需跨用。",
+    "example": "合成示例：合作项目分阶段验收后付款，双方仍需核对验收标准与各自承担的风险。",
+    "boundary": "均衡不代表公平或必然发生；不能假定读懂他人动机。",
+    "notes": "只计算自己的行动成本，容易漏掉对方会调整行为这一点。本模块先把已知利益与未经确认的动机分开，再提出几种合理回应。承诺应检查可执行性，合作破裂也应有备选路径。合成付款案例只是可讨论的机制，不表示已形成合同，也不能保证合作成功。均衡是特定假设下的分析概念，不能直接充当现实预测。实际方案仍应尊重自主选择，以诚实沟通核对关键条件。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M07-博弈与合作.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M08",
+    "name": "微观经济学与宏观经济学",
+    "claim": "解释需求、成本与激励如何影响选择，检查外部经济变化的传导途径。",
+    "knowledge": [
+      "供需、边际成本与机会成本",
+      "外部性、交易成本与委托代理",
+      "逆向选择、道德风险与激励",
+      "通胀、就业、利率、货币财政与周期"
+    ],
+    "input": "市场地区、需求证据、价格成本、替代品、合同和数据日期口径。",
+    "method": "分清可影响变量与外部条件；分析单位收支和激励；用情景及小试验证需求。",
+    "output": "需求成本证据、激励结构、现金影响和验证计划。",
+    "stages": "常用S2—S4；按需跨用。",
+    "example": "合成示例：课程报价低仍可能不划算，应加上时间成本并验证它是否满足真实需求。",
+    "boundary": "宏观故事不能直接推出个人收入或资产价格方向。",
+    "notes": "分析经济问题时，先明确对象和口径。名义收入增长不一定等于购买力改善，销量也不等于利润。微观部分解释边际变化、交易成本和参与者激励；宏观部分用于构造有来源的外部情景，不能把周期当精确时钟。合成课程案例说明应计算完整成本，而非给出购买建议。现实时点的岗位、市场和产品信息必须另外核实，并与制度或其他解释比较。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M08-微观与宏观经济.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M09",
+    "name": "马克思主义政治经济学",
+    "claim": "梳理资源投入、劳动、控制权和分配关系，理解选择受到的结构性条件。",
+    "knowledge": [
+      "生产力与生产关系",
+      "资本、劳动、价值与剩余价值",
+      "积累、分配与利益结构",
+      "社会再生产、历史条件与理论比较"
+    ],
+    "input": "实际组织关系、资源控制、劳动过程、收入分配及历史制度材料。",
+    "method": "先描述关系；区分概念、经验主张与评价；对照材料；比较竞争解释。",
+    "output": "生产分配图、概念材料对应、适用条件和行动含义。",
+    "stages": "常用S2、S3、S5；按需跨用。",
+    "example": "合成示例：比较两种合作安排，列清谁投入设备、谁劳动、谁决策、收益怎样分配。",
+    "boundary": "理论名词不是事实证据；群体位置不能证明个人品格或动机。",
+    "notes": "这一视角帮助看见个体选择背后的资源与权力关系，但应从具体材料出发。投入、控制、风险和收益未必由同一方承担，需要逐项记录。使用经典概念时保留原文语境，区分解释事实与评价是否公平，并与微观激励和制度分析进行比较。合成合作例子不预设哪一安排更好，也不推断任何人的政治立场。能力验收应看理论如何连接证据，以及哪些反例仍未解释。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M09-马克思主义政治经济学.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M10",
+    "name": "心理学与行为科学",
+    "claim": "把笼统的自我评价改写成具体行为，寻找可以低成本调整的条件。",
+    "knowledge": [
+      "认知、社会、人格心理与行为经济",
+      "注意、记忆、情绪、动机与习惯",
+      "确认偏误、锚定、损失厌恶与从众",
+      "群体极化、权威服从、依恋与冲突"
+    ],
+    "input": "具体情境、行为频率、感受、环境、既往尝试及结果。",
+    "method": "区分观察与解释；列竞争假设；做可逆行为调整；依据记录修正。",
+    "output": "情境行为记录、解释假设、行为试行和反馈。",
+    "stages": "常用S1—S3、S7—S8；按需跨用。",
+    "example": "合成示例：晚间总拖延，先观察疲劳、任务不清和手机干扰，再试一项环境调整。",
+    "boundary": "不能从聊天诊断人格或疾病；无改善不等于人格有缺陷。",
+    "notes": "当用户说自己不自律，先找具体事件，而不是立即贴人格标签。同一种拖延可能来自疲劳、目标模糊、冲突或环境诱因，需要保留竞争解释。页中行为调整只是合成试行，没有声称找到原因或取得改善。观察时看一段时间的实际记录，并检查代价和可持续性。心理概念并非适用于每个人的定律；持续显著困扰或功能受损，需要将专业评估纳入下一步。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M10-心理与行为.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M11",
+    "name": "社会学、政治学、制度分析与组织行为",
+    "claim": "把个人行为、组织流程与制度条件分层分析，找到权限内可改的环节。",
+    "knowledge": [
+      "家庭、阶层、群体身份与组织",
+      "权力、合法性与官僚体系",
+      "正式规则与非正式规则",
+      "制度激励、组织惯性与协作"
+    ],
+    "input": "具体事件、正式流程、实际记录、角色权限、考核和资源分配。",
+    "method": "分层定位问题；对照规定与实际；检查权责和信息断点；提出可执行改进。",
+    "output": "角色权限激励表、流程阻点、证据和参与条件。",
+    "stages": "常用S2—S4、S7；按需跨用。",
+    "example": "合成示例：审批总延迟，先核对决策权、资料缺口和交接责任，再讨论增加提醒。",
+    "boundary": "职位不能证明动机；结构解释不替代事实，也不免除个人责任。",
+    "notes": "组织问题常发生在层次之间：个人想推进，流程却要求别人批准；正式规定与实际习惯也可能不同。分析应列出谁能决定、谁提供资源、谁承担责任，以及信息在哪里中断。合成审批例子只提出调查方向，并未确认原因。改进需处于用户权限内，写清参与者与程序。政治制度描述、法律效力和价值判断应分别表达，不能用一种层面的结论代替另一种。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M11-社会制度与组织.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M12",
+    "name": "历史与思想史",
+    "claim": "还原事情如何形成，辨认历史类比的共同机制与关键差异。",
+    "knowledge": [
+      "中国史、世界史与中国近现代史",
+      "经济史、科技史与思想史",
+      "路径依赖、长期积累与偶然事件",
+      "史料辨析、语境与周期解释"
+    ],
+    "input": "问题、时期地域、原始史料、可靠研究、来源背景和当前条件。",
+    "method": "建必要时间线；分史料与后来的解释；比较机制及差异；保留争议与反例。",
+    "output": "带来源时间线、类比适用表、争议和现实启示。",
+    "stages": "常用S2、S3、S5；按需跨用。",
+    "example": "合成示例：借旧技术转型理解新行业时，同时比较进入门槛、制度和需求的差异。",
+    "boundary": "过去相似不意味着未来重演；不能用后见之明冒充当时知识。",
+    "notes": "历史分析的价值在于解释条件如何积累，而不只是寻找一句支持当下选择的故事。同一事件需要区分当事记录、后来的研究与今天的转述。使用类比时，应把共同机制和关键差异同时摆出，并寻找不符合预期的案例。合成技术转型例子不指向具体历史结论。资料可能残缺，解释也可能有争议；周期论述须注明证据和范围，不能用来预测确定时间点。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M12-历史与思想史.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M13",
+    "name": "毛泽东思想中的调查研究、实践与矛盾分析",
+    "claim": "从一线情况识别当前最重要的问题，用阶段试行检验并修正认识。",
+    "knowledge": [
+      "调查研究、实事求是与群众路线",
+      "《实践论》与认识修正",
+      "矛盾分析、主要矛盾与具体条件",
+      "战略战术、阶段目标与实践反馈"
+    ],
+    "input": "具体问题、历史语境、各方材料、实际限制与实践反馈。",
+    "method": "调查不同位置与反例；比较主要问题候选；制定阶段目标；用反馈改判断。",
+    "output": "调查记录、重点问题证据、试行方案和修正日志。",
+    "stages": "常用S1—S3、S7—S8；按需跨用。",
+    "example": "合成示例：团队进度慢，先访问执行者与协作者，再检验瓶颈究竟是需求还是交接。",
+    "boundary": "主要矛盾是待检验判断；口号不能代替调查、因果证据和多目标取舍。",
+    "notes": "本模块在现有引擎中归入决策方法，重点是具体问题、调查材料和实践检验。调查不能只听方便接触或支持既有结论的人，应记录漏掉了谁。选择阶段重点时，解释为何先处理这一问题，同时保留其他底线。合成团队例子没有认定瓶颈，真正调查后才可提出有依据的试行。历史思想需保持原文语境并结合现代证据方法；条件变化后，应重新判断重点并保留修正理由。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M13-调查研究与实践.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M14",
+    "name": "系统科学、控制论与钱学森系统工程",
+    "claim": "看清跨领域影响、反馈和延迟，设计有上限、能观察、可调整的行动。",
+    "knowledge": [
+      "系统边界、层次、接口与存量流量",
+      "状态x、输入u、观测y、扰动d、噪声v",
+      "反馈、延迟、稳定与鲁棒性",
+      "可达可控、可观测与模型条件",
+      "系统工程、开放复杂巨系统与综合集成"
+    ],
+    "input": "目标底线、边界、实际状态、指标、关系证据、延迟、权限与资源。",
+    "method": "建最小关系模型；区分状态和指标；检查副作用；按观察窗口有上限试行。",
+    "output": "变量表、反馈延迟图、干预测量对应和更新计划。",
+    "stages": "贯穿S1—S8。",
+    "example": "合成示例：学习加时挤占睡眠，应观察恢复与成果，不能因短期无进步持续加码。",
+    "boundary": "负反馈不保证稳定；生活类比不构成可控性证明；M14不掌握用户价值决定权。",
+    "notes": "先区分看不见的真实状态与可记录的代理指标：投入时长正常，能力或恢复状态仍可能下降。关系箭头要标证据或假设；只有结构、参数和检验资料充足时才建立数值模型。采集数据可以频繁，改变策略却应考虑延迟和累积投入。合成学习例子不提供健康因果结论。钱学森原文、现代控制知识和本项目应用应分别标识，不能把数学定理直接套在人生上；总控仍由主协调者承担。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M14-系统与控制.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M15",
+    "name": "计算机、数据处理与信息安全",
+    "claim": "把资料处理成含义清楚、可核对、可复现并受权限约束的结果。",
+    "knowledge": [
+      "Excel、SQL、Python与基础算法",
+      "数据清洗、字典与可视化",
+      "数据库、网络与信息安全",
+      "来源、权限、备份与可复现流程"
+    ],
+    "input": "授权数据、字段格式、目标、环境、质量标准和保存访问限制。",
+    "method": "保留原始记录；查缺失重复和单位；运行转换；抽样核对与汇总勾稽。",
+    "output": "数据字典、处理记录、代码公式、核对结果及恢复说明。",
+    "stages": "常用S2、S4、S7、S8；按需跨用。",
+    "example": "合成示例：合并月支出表前统一币种和日期；空白金额保留未知，不能静默填零。",
+    "boundary": "程序跑通不等于业务含义正确；不得扩大授权采集或绕过访问限制。",
+    "notes": "数据工作首先是理解字段，而不是选软件。相同名称可能表示不同口径，同一交易也可能被重复记录。应保留原始材料，使清洗与转换可追溯，再用样本核对和总额勾稽检查结果。合成账表示例没有读取用户财务资料，只示范缺失值处理。图表需写清单位、分母和范围；备份有实际恢复路径才有用。工具执行成功是技术状态，不是数据真实或结论正确的证明。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M15-计算机数据与安全.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M16",
+    "name": "机器学习、大模型与自动化",
+    "claim": "先用真实样例验证AI的价值和失败方式，再把适合的任务接入流程。",
+    "knowledge": [
+      "训练、推理、泛化与机器学习",
+      "大模型、检索增强与工具流程",
+      "泄漏、偏差、幻觉与错误推断",
+      "隐私、权限、评价与运行监控"
+    ],
+    "input": "任务、代表样例、正确结果或评价法、错误成本、工具数据和授权。",
+    "method": "建简单基线；选流程；用未参与设计的样例评价；设失败处理和监控。",
+    "output": "任务规范、基线、评价结果、失败案例和权限说明。",
+    "stages": "常用S2—S4、S7—S8；按需跨用。",
+    "example": "合成示例：让AI抽取会议任务，先检查漏项与责任人误配，再决定哪些结果需人工确认。",
+    "boundary": "流畅和多代理一致不代表事实；提示词不等于训练，未运行不能称完成。",
+    "notes": "自动化应从明确的输入、输出和失败成本开始。先与人工规则或简单办法比较，才能知道AI是否真正节省成本并保持质量。测试材料应覆盖实际任务中的难例，而且不能全部参与过提示设计。合成会议任务例子只是评价方案，不代表已连接会议工具或启用后台任务。多个相似模型的意见不能替代独立证据。运行后要记录真实结果、失败处理与修订，授权范围也必须落实到具体动作。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M16-人工智能与自动化.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M17",
+    "name": "语言表达、沟通与谈判",
+    "claim": "理解对方需要判断什么，把事实、主张和请求表达清楚并核对约定。",
+    "knowledge": [
+      "阅读、写作、提问与倾听",
+      "演讲、结构化表达与多长度稿件",
+      "谈判、说服、利益与底线",
+      "冲突处理、理解检查与约定"
+    ],
+    "input": "对象场景、交流目标、已知顾虑、事实材料、立场和关系时间限制。",
+    "method": "复述关切；组织主张证据和请求；准备诚实回应；核对理解、责任与后续。",
+    "output": "具体稿件、提问清单、谈判条件和约定记录。",
+    "stages": "常用S1—S3、S6—S7；按需跨用。",
+    "example": "合成示例：申请调整排班时，说明实际困难、可交换时段和请求，确认对方理解。",
+    "boundary": "表达清晰不保证内容真实或对方接受；外发仍需已有授权。",
+    "notes": "沟通先明确听众要作出的判断或行动，再选择一句话、一页纸或完整报告。谈判时要区分立场和背后的利益，未知动机应通过提问核对。合成排班例子展示表达结构，并不意味着对方已答应或用户授权发送。验收除了稿件本身，还要看事实与意见是否区分、请求是否具体，以及责任和后续是否明确。说服应建立在诚实与自主选择上，不编造背书、经历或对方认可。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M17-表达沟通与谈判.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M18",
+    "name": "管理与执行",
+    "claim": "把目标变成有责任、依赖、验收和反馈的实际工作。",
+    "knowledge": [
+      "目标设定、任务分解与优先级",
+      "项目、流程、会议与协作",
+      "授权、责任与反馈",
+      "风险管理、缓冲与复盘"
+    ],
+    "input": "认可的目标、完成标准、期限、资源、责任人、依赖和已有承诺。",
+    "method": "定义成果和下一步；安排依赖与缓冲；记录阻碍和证据；据结果修改计划。",
+    "output": "目标行动表、责任验收标准、时间依赖、风险应对和复盘变更。",
+    "stages": "常用S3、S4、S7、S8；按需跨用。",
+    "example": "合成示例：把“学会SQL”改为“完成一份可复算查询报告”，再拆资料、查询和核对任务。",
+    "boundary": "日期过去不等于完成；忙碌时长不是成果，记录负担也有成本。",
+    "notes": "执行要能看见成果，而不只是看见任务列表。每项重要行动应说明谁负责、依赖什么、怎样验收和遇到阻碍如何处理。反馈频率使用最低必要水平，避免维护系统反而消耗大量资源。合成SQL例子仅示范如何定义产物，不保证一份报告就代表全面掌握能力。复盘要分开计划假设、执行偏差和外部变化，下一轮把改进落实到具体动作，同时保留休息与恢复所需空间。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M18-管理与执行.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M19",
+    "name": "个人财务",
+    "claim": "先看现金流和责任能否承受变化，再比较支出、保障与投资选择。",
+    "knowledge": [
+      "收入消费、预算与现金流",
+      "资产负债、复利与通胀",
+      "保险、债券、股票与指数基金",
+      "资产配置、风险收益、流动性与骗局"
+    ],
+    "input": "必要收支区间、可用资产、债务期限、家庭责任、用款时间和风险边界。",
+    "method": "列收支偿付；测试收入下降和资金锁定；比总成本、流动性、风险与条款。",
+    "output": "现金负债摘要、风险情景、方案限制和待核实条款。",
+    "stages": "常用S1—S4、S8；按需跨用。",
+    "example": "合成示例：考虑停工进修前，检验收入中断时必要支出与到期偿付是否仍可覆盖。",
+    "boundary": "不承诺收益；不预设统一应急金月数或资产比例适合每个人。",
+    "notes": "个人财务首先支持生活责任与选择空间。净资产为正也可能出现短期现金不足，因此要区分收入、利润、现金流与资产。合成停工进修例子没有给出投资建议或确定预算，只说明应做何种压力情景。具体方案应比较总费用、用款期限、流动性和承受不起的损失。真实产品、税务和法律条件需按地区与日期另外核实；历史收益不能保证未来，也不应收集完整账户凭证。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M19-个人财务.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M20",
+    "name": "法律基础",
+    "claim": "把事实、规则、证据和程序分清楚，找到关键责任与期限。",
+    "knowledge": [
+      "宪法、民法、合同与侵权",
+      "劳动法、公司法、刑法与行政法",
+      "权利、义务、证据与责任",
+      "程序、管辖、时效与适用版本"
+    ],
+    "input": "地区、事件日期、文本材料、当事人角色、目的与可能截止期限。",
+    "method": "列事实时间线；查现行官方规则及适用条件；整理证据、路径和专业核实问题。",
+    "output": "官方规则来源、证据清单、程序期限和待核实事项。",
+    "stages": "常用S1、S2、S4、S7；按需跨用。",
+    "example": "合成示例：收到合作合同，先圈出交付、付款、违约和争议条款，再核对适用规则。",
+    "boundary": "通用摘要不能代替个案判断；道德赞同不证明合法，不能保证结果。",
+    "notes": "法律问题常被事实细节、地区和时间改变。分析应先分清实际发生的事件、各方主张与未知，再核对现行官方资料的效力和适用范围。页中合同例子只是资料整理步骤，没有审核任何真实合同，也不保证条款有效。关键程序期限不能被一般讨论淹没。重大争议、复杂适用或不可逆行动，应明确需要专业核实的具体问题；掌握法律概念不等于获得执业资格或完成个案判断。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M20-法律基础.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M21",
+    "name": "健康基础",
+    "claim": "用适用证据支持可持续生活调整，把身体承受力纳入所有计划。",
+    "knowledge": [
+      "运动、力量训练与有氧能力",
+      "营养、睡眠与压力",
+      "成瘾与慢性病风险",
+      "医学证据、适用人群与生活质量"
+    ],
+    "input": "相关情况、目标、既有医嘱、活动限制、习惯和环境。",
+    "method": "区分生活规划与疾病问题；查适用指南；渐进调整；约定观察和停止条件。",
+    "output": "证据与范围、生活调整、观察停止条件及需评估事项。",
+    "stages": "常用S1—S4、S7—S8；按需跨用。",
+    "example": "合成示例：增加学习安排时同步检查睡眠与恢复；出现不适时重新评估负担。",
+    "boundary": "聊天记录不能作确定诊断；群体建议未必适合特定疾病、用药或状态。",
+    "notes": "健康模块既服务健康领域，也帮助其他领域检查计划是否可持续。先确定问题属于一般生活安排，还是症状、疾病或治疗；明显紧急线索需要及时处理。合成学习例子只强调资源和身体负担的联动，没有给出特定治疗或运动处方。实际调整应结合医嘱与活动限制，并使用当时适用的权威指南。验收要看到证据支持范围、具体行动、观察窗口和停止条件，而非只有笼统的健康口号。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M21-健康基础.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M22",
+    "name": "英语与原始资料检索",
+    "claim": "把问题变成检索式，读懂关键原文，并如实记录实际访问深度。",
+    "knowledge": [
+      "中英文关键词、同义词与限定条件",
+      "教材、论文、技术文档与公开课",
+      "阅读听力、术语与翻译",
+      "原始来源、版本、范围与访问状态"
+    ],
+    "input": "问题、已有关键词、资料类型、访问范围、日期要求和语言水平。",
+    "method": "设计检索；核对作者日期版本；取相关原文；检查条件与否定；对应主张出处。",
+    "output": "检索式、访问记录、术语表、主张出处对应与疑点。",
+    "stages": "贯穿S1—S8；通常从S2开始。",
+    "example": "合成示例：查一项软件功能时，检索官方版本文档，并记录是否真正取得正文。",
+    "boundary": "英文不天然更可靠；标题、摘要和自动翻译不等于读完原文。",
+    "notes": "英语在这里首先是获取一手知识的工具，不以口音作为核心目标。检索应从具体问题拆出关键词和限定条件，读取后特别核对否定、条件和概率措辞。合成软件例子不声称查阅了某份文档。实际来源应记录作者机构、日期版本及访问深度：只见摘要就明确写摘要，打不开就保留访问状态。官方来源也可能只支持有限范围；遇到关键歧义，需要返回上下文核对，不能用流畅翻译掩盖未知。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M22-英语与原始资料检索.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  },
+  {
+    "code": "M23",
+    "name": "文学、艺术、音乐、美学与伦理",
+    "claim": "检视什么值得追求、谁受到影响，以及哪些价值不应被效率分数覆盖。",
+    "knowledge": [
+      "文学、艺术、音乐与美学",
+      "情感、尊严、悲剧、欲望与意义",
+      "后果、义务、权利与关系责任",
+      "关怀、公平、自主与价值冲突"
+    ],
+    "input": "用户重视的事、不可牺牲边界、受影响者、具体情境与相关作品。",
+    "method": "澄清价值；从不同伦理角度检查冲突；必要时分析作品；呈现仍需用户取舍之处。",
+    "output": "价值边界、受影响者、尚存冲突；按需附作品分析。",
+    "stages": "伦理价值贯穿S1—S8；文学艺术按需。",
+    "example": "合成示例：高薪机会压缩照顾家人的时间，应呈现责任与成长取舍，由用户决定。",
+    "boundary": "价值分歧不能只靠总分；作品不是社会实验，AI不能代替用户定义人生意义。",
+    "notes": "这不是最后补上的装饰性检查。定义目标时就要确认谁受益、谁承担代价，以及自主、尊严和责任是否受影响。文学艺术帮助理解经验与多种立场，但作品分析不能充当现实心理规律的证据。合成高薪案例没有预设家庭责任必须压倒职业成长，只呈现必须由用户作出的取舍。效率之外的价值不应被无声折算成统一总分；AI可以帮助表达冲突，却不能冒充亲身经验或替用户决定何种人生值得过。",
+    "source_paths": [
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块/M23-文学艺术与伦理.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/方法总览.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/能力范围.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/模块路由.md",
+      "/root/.codex/skills/remote-skills/skill-6a9bc91f3d9881919858cec99a8f32e9/references/决策引擎.md"
+    ]
+  }
+]

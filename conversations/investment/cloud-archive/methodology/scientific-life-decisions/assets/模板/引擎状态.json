@@ -1,0 +1,50 @@
+{
+  "protocol": "3.0",
+  "decision_id": "填写实际记录编号",
+  "revision": 1,
+  "problem": {
+    "question": "",
+    "goal": "",
+    "source": "",
+    "constraints": []
+  },
+  "evidence": [],
+  "options": [],
+  "gaps": [],
+  "comparison": {
+    "revision": 0,
+    "input_fingerprint": "",
+    "method": "",
+    "artifact": "",
+    "option_ids": [],
+    "evidence_ids": [],
+    "strongest_objection": "",
+    "reversal_conditions": [],
+    "conditions": []
+  },
+  "review": {
+    "revision": 0,
+    "input_fingerprint": "",
+    "completed": false,
+    "mode": "主智能体自审",
+    "task_id": "",
+    "artifact": "",
+    "target_fingerprint": ""
+  },
+  "recommendation": {
+    "status": "待补证",
+    "option_ids": []
+  },
+  "user_choice": {
+    "status": "未知",
+    "option_ids": [],
+    "source": "",
+    "revision": 0,
+    "selection_fingerprint": ""
+  },
+  "execution": {
+    "status": "未知",
+    "authorization_source": "",
+    "action_record": ""
+  }
+}

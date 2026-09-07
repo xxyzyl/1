@@ -1,0 +1,8 @@
+{
+  "zip_crc": "pass",
+  "xml_parse": "pass",
+  "slide_count": 91,
+  "notes_count": 91,
+  "sources_in_all_notes": true,
+  "bytes": 418777
+}
